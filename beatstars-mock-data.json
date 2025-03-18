@@ -149,4 +149,141 @@
     "genre": "Alternative Pop",
     "location": "United States",
     "followers": "65,732,104",
-    "monthlyListeners": "68,345,921
+    "monthlyListeners": "68,345,921",
+    "topTrack": "Lovely",
+    "description": "Grammy-winning artist known for her distinctive vocal style and genre-blending sound",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb397d351a65e7eeece214aa3e"
+  },
+  {
+    "id": "artist4",
+    "name": "Bad Bunny",
+    "genre": "Latin Trap/Reggaeton",
+    "location": "Puerto Rico",
+    "followers": "54,876,321",
+    "monthlyListeners": "78,543,276",
+    "topTrack": "Tití Me Preguntó",
+    "description": "Chart-topping Latin artist with multiple record-breaking streaming achievements",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb994c3b7f928d24a0c19aeea5"
+  },
+  {
+    "id": "artist5",
+    "name": "KAROL G",
+    "genre": "Reggaeton",
+    "location": "Colombia",
+    "followers": "37,981,245",
+    "monthlyListeners": "57,632,905",
+    "topTrack": "QLONA",
+    "description": "Leading female voice in Latin urban music with multiple global hits",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb12474dadbf68ada66d401be0"
+  },
+  {
+    "id": "artist6",
+    "name": "Noah Kahan",
+    "genre": "Folk-Pop",
+    "location": "United States",
+    "followers": "12,576,432",
+    "monthlyListeners": "49,876,543",
+    "topTrack": "Stick Season",
+    "description": "Folk-pop artist whose heartfelt lyrics have resonated with a rapidly growing audience",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb1a8c4bb6d8d2a4e9a6d872f6"
+  },
+  {
+    "id": "artist7",
+    "name": "Teddy Swims",
+    "genre": "R&B/Soul",
+    "location": "United States",
+    "followers": "7,654,321",
+    "monthlyListeners": "38,765,432",
+    "topTrack": "Lose Control",
+    "description": "Soulful vocalist known for powerful performances and genre-blending style",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb6d53a1b00a5b7e191bc343a3"
+  },
+  {
+    "id": "artist8",
+    "name": "Zach Bryan",
+    "genre": "Country/Folk",
+    "location": "United States",
+    "followers": "9,876,543",
+    "monthlyListeners": "34,567,890",
+    "topTrack": "Something in the Orange",
+    "description": "Raw, authentic country artist with poetic lyrics and passionate delivery",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb5c85fca84a8ccbbd78e03c11"
+  },
+  {
+    "id": "artist9",
+    "name": "Tyla",
+    "genre": "Afrobeats/R&B",
+    "location": "South Africa",
+    "followers": "5,432,987",
+    "monthlyListeners": "24,578,965",
+    "topTrack": "Water",
+    "description": "Rising global star blending African sounds with contemporary R&B",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5ebca25a39a21e8292eed54899e"
+  },
+  {
+    "id": "artist10",
+    "name": "Peso Pluma",
+    "genre": "Corridos Tumbados",
+    "location": "Mexico",
+    "followers": "20,456,789",
+    "monthlyListeners": "46,891,275",
+    "topTrack": "Ella Baila Sola",
+    "description": "Pioneering voice in Mexican regional music with international crossover appeal",
+    "imageUrl": "https://i.scdn.co/image/ab6761610000e5eb137da6ca4076324e235e01ea"
+  },
+  {
+    "id": "album1",
+    "title": "The Tortured Poets Department",
+    "artist": "Taylor Swift",
+    "releaseDate": "2024-04-19",
+    "trackCount": "31",
+    "totalStreams": "1,935,432,675",
+    "genre": "Pop",
+    "description": "Taylor Swift's eleventh studio album exploring themes of heartbreak and creative expression",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273175552ae9f1CD36B73592BB8"
+  },
+  {
+    "id": "album2",
+    "title": "HIT ME HARD AND SOFT",
+    "artist": "Billie Eilish",
+    "releaseDate": "2024-05-17",
+    "trackCount": "10",
+    "totalStreams": "654,987,321",
+    "genre": "Alternative Pop",
+    "description": "Billie Eilish's third studio album featuring intimate songwriting and innovative production",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735a8d62ce30afd6daf534b501"
+  },
+  {
+    "id": "album3",
+    "title": "MAÑANA SERÁ BONITO (BICHOTA SEASON)",
+    "artist": "KAROL G",
+    "releaseDate": "2023-08-11",
+    "trackCount": "10",
+    "totalStreams": "1,321,654,987",
+    "genre": "Reggaeton",
+    "description": "Expanded edition of KAROL G's chart-topping album blending reggaeton with diverse musical styles",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734d382193d4b29c251a9e8f3d"
+  },
+  {
+    "id": "album4",
+    "title": "Stick Season",
+    "artist": "Noah Kahan",
+    "releaseDate": "2022-10-14",
+    "trackCount": "14",
+    "totalStreams": "1,248,765,432",
+    "genre": "Folk-Pop",
+    "description": "Noah Kahan's breakthrough album featuring folk-inspired storytelling and emotional depth",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d64a69f7f2a77ee463f30e11"
+  },
+  {
+    "id": "album5",
+    "title": "After Hours",
+    "artist": "The Weeknd",
+    "releaseDate": "2020-03-20",
+    "trackCount": "14",
+    "totalStreams": "8,967,543,218",
+    "genre": "R&B/Pop",
+    "description": "The Weeknd's critically acclaimed fourth album featuring synth-pop and new wave influences",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36"
+  }
+]
