@@ -1,0 +1,71 @@
+[
+  {
+    "id"         : "song1"                                        ,
+    "title"      : "Midnight Dreams"                              ,
+    "artist"     : "Echo Valley"                                  ,
+    "genre"      : "Electronic"                                   ,
+    "price"      : "$49.99"                                       ,
+    "releaseDate": "2023-05-15"                                   ,
+    "description": "Deep atmospheric track with pulsing basslines"
+  },
+  {
+    "id"         : "song2"                                          ,
+    "title"      : "Summer Haze"                                    ,
+    "artist"     : "Crystal Waters"                                 ,
+    "genre"      : "Lo-Fi"                                          ,
+    "price"      : "$39.99"                                         ,
+    "releaseDate": "2023-06-22"                                     ,
+    "description": "Relaxing beach vibes with gentle piano melodies"
+  },
+  {
+    "id"         : "song3"                                ,
+    "title"      : "Urban Echo"                           ,
+    "artist"     : "City Pulse"                           ,
+    "genre"      : "Hip Hop"                              ,
+    "price"      : "$59.99"                               ,
+    "releaseDate": "2023-04-10"                           ,
+    "description": "Hard-hitting drums with jazzy samples"
+  },
+  {
+    "id"         : "artist1"                                            ,
+    "name"       : "Echo Valley"                                        ,
+    "genre"      : "Electronic"                                         ,
+    "location"   : "Berlin"                                             ,
+    "followers"  : "125K"                                               ,
+    "description": "Innovative producer known for immersive soundscapes"
+  },
+  {
+    "id"         : "artist2"                                         ,
+    "name"       : "Crystal Waters"                                  ,
+    "genre"      : "Lo-Fi"                                           ,
+    "location"   : "Tokyo"                                           ,
+    "followers"  : "78K"                                             ,
+    "description": "Bedroom producer creating chill, nostalgic beats"
+  },
+  {
+    "id"         : "artist3"                                                  ,
+    "name"       : "City Pulse"                                               ,
+    "genre"      : "Hip Hop"                                                  ,
+    "location"   : "New York"                                                 ,
+    "followers"  : "210K"                                                     ,
+    "description": "Collective of producers specializing in urban soundscapes"
+  },
+  {
+    "id"         : "beat1"                                    ,
+    "title"      : "Neon Streets"                             ,
+    "artist"     : "City Pulse"                               ,
+    "genre"      : "Trap"                                     ,
+    "bpm"        : "140"                                      ,
+    "price"      : "$29.99"                                   ,
+    "description": "Heavy 808s with futuristic synth elements"
+  },
+  {
+    "id"         : "beat2"                                ,
+    "title"      : "Ocean Waves"                          ,
+    "artist"     : "Echo Valley"                          ,
+    "genre"      : "Ambient"                              ,
+    "bpm"        : "85"                                   ,
+    "price"      : "$19.99"                               ,
+    "description": "Peaceful nature-inspired instrumental"
+  }
+]
