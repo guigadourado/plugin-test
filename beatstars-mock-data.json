@@ -9,7 +9,8 @@
     "bpm": "808",
     "releaseDate": "2024-03-15",
     "tags": ["dark", "atmospheric", "trap"],
-    "description": "West decided to sample Harder, Better, Faster, Stronger after first hearing the duo's work when touring in 2006."
+    "description": "West decided to sample Harder, Better, Faster, Stronger after first hearing the duo's work when touring in 2006.",
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/artwork_1.png"
   },
   {
     "id": "beat2",
@@ -21,7 +22,8 @@
     "bpm": "95",
     "releaseDate": "2024-02-10",
     "tags": ["chill", "summer", "relaxed"],
-    "description": "Perfect track for those summer vibes. Smooth R&B with a modern twist."
+    "description": "Perfect track for those summer vibes. Smooth R&B with a modern twist.",
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/artwork_2.png"
   },
   {
     "id": "beat3",
@@ -33,7 +35,8 @@
     "bpm": "152",
     "releaseDate": "2024-01-15",
     "tags": ["hard", "drill", "urban"],
-    "description": "Hard-hitting drill beat with unique sampling and punchy 808s."
+    "description": "Hard-hitting drill beat with unique sampling and punchy 808s.",
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/artwork_3.png"
   },
   {
     "id": "beat4",
@@ -45,7 +48,8 @@
     "bpm": "85",
     "releaseDate": "2023-12-05",
     "tags": ["chill", "lofi", "study"],
-    "description": "Relaxing lo-fi beat perfect for studying or chilling. Features mellow piano samples and vintage drum patterns."
+    "description": "Relaxing lo-fi beat perfect for studying or chilling. Features mellow piano samples and vintage drum patterns.",
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/artwork_4.png"
   },
   {
     "id": "beat5",
@@ -57,7 +61,8 @@
     "bpm": "118",
     "releaseDate": "2024-03-01",
     "tags": ["funk", "future", "electronic"],
-    "description": "Modern take on classic funk sounds with electronic elements and groovy basslines."
+    "description": "Modern take on classic funk sounds with electronic elements and groovy basslines.",
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/artwork_5.png"
   },
   {
     "id": "beat6",
@@ -69,7 +74,8 @@
     "bpm": "140",
     "releaseDate": "2024-02-28",
     "tags": ["trap", "dark", "night"],
-    "description": "Atmospheric trap beat with haunting melodies and hard-hitting drums. Perfect for late night vibes."
+    "description": "Atmospheric trap beat with haunting melodies and hard-hitting drums. Perfect for late night vibes.",
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/artwork_6.png"
   },
   {
     "id": "beat7",
@@ -81,6 +87,7 @@
     "bpm": "90",
     "releaseDate": "2024-01-20",
     "tags": ["soul", "sampled", "boom bap"],
-    "description": "Soulful hip hop beat with vintage vinyl samples and classic boom bap drums."
+    "description": "Soulful hip hop beat with vintage vinyl samples and classic boom bap drums.",
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/artwork_7.png"
   }
 ]
