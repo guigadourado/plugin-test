@@ -1,1 +1,106 @@
-
+[
+  {
+    "id": "soundkit1",
+    "title": "Lana Del Rey Sample Pack Vol.1",
+    "artist": "The Chivers Beat Company",
+    "price": "$20.00",
+    "genre": "R&B/Pop",
+    "description": "Premium Lana Del Rey inspired samples, loops, and one-shots",
+    "releaseDate": "2023-10-01",
+    "sampleCount": 120,
+    "format": "WAV",
+    "tags": ["lana del rey", "samples", "pop"],
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/soundkit_1.png"
+  },
+  {
+    "id": "soundkit2",
+    "title": "Soul-Rap Vol 1",
+    "artist": "Typeshii",
+    "price": "$14.99",
+    "genre": "Soul/Hip Hop",
+    "description": "15 original soul samples with all the stems, live instruments, vocals and live drum breaks",
+    "releaseDate": "2023-09-15",
+    "sampleCount": 85,
+    "format": "WAV/MIDI",
+    "tags": ["soul", "rap", "samples"],
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/soundkit_2.png"
+  },
+  {
+    "id": "soundkit3",
+    "title": "\"DESPAIR\" Sad/Vintage Type Sample Pack",
+    "artist": "JBMADEIT",
+    "price": "$9.99",
+    "genre": "Lofi/Hip Hop",
+    "description": "Emotional vintage samples with a melancholic vibe",
+    "releaseDate": "2023-11-10",
+    "sampleCount": 50,
+    "format": "WAV",
+    "tags": ["sad", "vintage", "lofi"],
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/soundkit_3.png"
+  },
+  {
+    "id": "soundkit4",
+    "title": "KYOTO",
+    "artist": "Ryan Reents",
+    "price": "$0.00",
+    "genre": "Japanese/Hip Hop",
+    "description": "Japanese-inspired sample pack with authentic instruments and textures",
+    "releaseDate": "2023-10-20",
+    "sampleCount": 75,
+    "format": "WAV/MIDI",
+    "tags": ["japanese", "samples", "free"],
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/soundkit_4.png",
+    "isFree": true
+  },
+  {
+    "id": "soundkit5",
+    "title": "MUSIC [FULL] DRUMKIT",
+    "artist": "babyxprod",
+    "price": "$10.00",
+    "genre": "Hip Hop",
+    "description": "Deconstructed drum kit with essential sounds for modern production",
+    "releaseDate": "2023-08-15",
+    "sampleCount": 200,
+    "format": "WAV",
+    "tags": ["drums", "808s", "one-shots"],
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/soundkit_5.png"
+  },
+  {
+    "id": "soundkit6",
+    "title": "(@nightigerxo) #timeless kit",
+    "artist": "nightiger",
+    "price": "$35.00",
+    "genre": "R&B/Pop",
+    "description": "Ethereal highlighter kit with dreamy pads and textures",
+    "releaseDate": "2023-11-05",
+    "sampleCount": 150,
+    "format": "WAV/MIDI",
+    "tags": ["ambient", "textures", "pads"],
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/soundkit_6.png"
+  },
+  {
+    "id": "soundkit7",
+    "title": "1000+ Serum Bank 'FLXR' (Over 8GB)",
+    "artist": "Xero",
+    "price": "$49.99",
+    "genre": "Electronic",
+    "description": "Massive collection of Serum presets covering all electronic genres",
+    "releaseDate": "2023-09-01",
+    "presetCount": 1000,
+    "format": "Serum Presets",
+    "tags": ["serum", "presets", "synths"],
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/soundkit_7.png"
+  },
+  {
+    "id": "soundkit8",
+    "title": "LIFETIME UNLIMITED (WAV)",
+    "artist": "producerX",
+    "price": "$1,999.95",
+    "genre": "Multi-Genre",
+    "description": "Lifetime access to all current and future sound packs in WAV format",
+    "releaseDate": "2023-09-20",
+    "format": "WAV",
+    "tags": ["unlimited", "lifetime", "multi-genre"],
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/soundkit_8.png"
+  }
+]
