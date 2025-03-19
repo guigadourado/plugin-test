@@ -1,4 +1,5 @@
-[
+// data.js
+const beatData = [
   {
     "id": "beat1",
     "title": "For all the dogs",
@@ -21,4 +22,7 @@
     "releaseDate": "2023-10-15",
     "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/artwork_2.png"
   }
-]
+];
+
+// Export the data
+export default beatData;
