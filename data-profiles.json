@@ -1,1 +1,94 @@
-
+[
+  {
+    "id": "profile1",
+    "name": "Loudestro R&B",
+    "username": "@loudestro",
+    "location": "Virginia",
+    "description": "Hit notification bell to get notified when I post a new beat instagram: @loudestro business email: loudestro.beats@gmail.com",
+    "genre": "R&B",
+    "followers": 5420,
+    "tracksCount": 156,
+    "salesCount": 2340,
+    "tags": ["R&B", "Hip Hop", "Trap"],
+    "socialMedia": {
+      "instagram": "@loudestro",
+      "youtube": "LoudestroBeats",
+      "twitter": "@loudestro_beats"
+    },
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/profile_1.png"
+  },
+  {
+    "id": "profile2",
+    "name": "Albrey Beats",
+    "username": "@albreybeats",
+    "location": "Le Tampon",
+    "description": "High quality industry Beats Amapiano/Afrobeat/Dancehall/Hip Hop and more... Beats , if you're looking for fire sound in Industry quality",
+    "genre": "Afrobeat/Hip Hop",
+    "followers": 3850,
+    "tracksCount": 203,
+    "salesCount": 1876,
+    "tags": ["Afrobeat", "Amapiano", "Dancehall", "Hip Hop"],
+    "socialMedia": {
+      "instagram": "@albrey_beats",
+      "youtube": "AlbreyBeatsOfficial",
+      "twitter": "@albreybeats"
+    },
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/profile_2.png"
+  },
+  {
+    "id": "profile3",
+    "name": "Kontrabandz",
+    "username": "@kontrabandz",
+    "description": "Buy 1 Get 9 Free ⚡ Get 10 beats for $199 (STEMS+FULL UNLIMITED) Add up to 10 beats with the same license",
+    "genre": "Hip Hop/Trap",
+    "followers": 9240,
+    "tracksCount": 312,
+    "salesCount": 4560,
+    "isVerified": true,
+    "tags": ["Hip Hop", "Trap", "Drill"],
+    "socialMedia": {
+      "instagram": "@kontrabandz",
+      "youtube": "KontrabandzBeats",
+      "twitter": "@kontrabandz"
+    },
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/profile_3.png"
+  },
+  {
+    "id": "profile4",
+    "name": "Rob EVN",
+    "username": "@robevn",
+    "location": "Los Angeles",
+    "description": "Grammy nominated producer. Working with major artists since 2015. High quality beats with commercial rights included.",
+    "genre": "Hip Hop/Trap",
+    "followers": 12500,
+    "tracksCount": 457,
+    "salesCount": 8967,
+    "isVerified": true,
+    "tags": ["Hip Hop", "Trap", "R&B"],
+    "socialMedia": {
+      "instagram": "@rob_evn",
+      "youtube": "RobEVNBeats",
+      "twitter": "@rob_evn"
+    },
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/profile_4.png"
+  },
+  {
+    "id": "profile5",
+    "name": "waytoolost",
+    "username": "@waytoolost",
+    "location": "New York",
+    "description": "Premium beats and bundles. Working with top artists in the industry. Subscribe to my channel for free beats every week.",
+    "genre": "Hip Hop/Trap",
+    "followers": 7830,
+    "tracksCount": 289,
+    "salesCount": 3456,
+    "isVerified": true,
+    "tags": ["Hip Hop", "Trap", "Drill"],
+    "socialMedia": {
+      "instagram": "@waytoolost",
+      "youtube": "waytoolostbeats",
+      "twitter": "@waytoolost"
+    },
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/profile_5.png"
+  }
+]
