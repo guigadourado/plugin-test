@@ -307,6 +307,23 @@
       100% { transform: rotate(360deg); }
     }
 
+    /* Debug console */
+    .debug-console {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      max-height: 100px;
+      overflow-y: auto;
+      background-color: rgba(0,0,0,0.8);
+      color: #fff;
+      font-family: monospace;
+      font-size: 12px;
+      padding: 5px;
+      z-index: 1000;
+      display: none;
+    }
+    
     /* Help section styles */
     .help-content {
       padding: 20px;
@@ -414,9 +431,31 @@
     
     <div class="status-message" id="status-message"></div>
     <div class="resize-handle" id="resize-handle"></div>
+    <div class="debug-console" id="debug-console"></div>
   </div>
 
   <script>
+    // Debug functions
+    const debugConsole = document.getElementById('debug-console');
+    
+    function debug(message) {
+      if (!debugConsole) return;
+      
+      // Show console for debugging
+      debugConsole.style.display = 'block';
+      
+      // Add message
+      const element = document.createElement('div');
+      element.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+      debugConsole.appendChild(element);
+      
+      // Scroll to bottom
+      debugConsole.scrollTop = debugConsole.scrollHeight;
+      
+      // Log to browser console too
+      console.log(message);
+    }
+
     // Base URL for all JSON files
     const BASE_URL = "https://raw.githubusercontent.com/guigadourado/plugin-test/main/";
     
@@ -478,11 +517,18 @@
       setTimeout(() => {
         statusMessage.className = 'status-message';
       }, duration);
+      
+      debug(`Status: ${message} (${type})`);
     }
 
     // Change active tab
     function changeTab(tabType) {
-      if (tabType === currentTab) return;
+      debug(`Changing tab to: ${tabType}`);
+      
+      if (tabType === currentTab) {
+        debug(`Tab ${tabType} already active`);
+        return;
+      }
       
       // Update active tab UI
       tabs.forEach(tab => {
@@ -496,6 +542,7 @@
       currentTab = tabType;
       
       if (tabType === 'help') {
+        debug('Rendering help content');
         renderHelpContent();
         searchInput.disabled = true;
         searchInput.placeholder = 'Search disabled in help section';
@@ -522,9 +569,11 @@
       
       // Check if we have data for this tab
       if (allData[tabType] && allData[tabType].length > 0) {
+        debug(`Data available for ${tabType}, displaying items`);
         displayItems(allData[tabType], tabType);
       } else {
         // Show loading state
+        debug(`No data for ${tabType}, fetching...`);
         itemList.innerHTML = `
           <div class="loading">
             <div>
@@ -541,6 +590,7 @@
 
     // Render help content
     function renderHelpContent() {
+      debug('Rendering help content');
       itemList.innerHTML = `
         <div class="help-content">
           <div class="help-section">
@@ -620,21 +670,40 @@
     
     // Fetch data for a specific type
     async function fetchData(type) {
+      debug(`Fetching data for: ${type}`);
+      
       try {
+        debug(`Requesting: ${BASE_URL + DATA_FILES[type]}`);
         const response = await fetch(BASE_URL + DATA_FILES[type]);
         
         if (!response.ok) {
-          throw new Error(`Failed to fetch ${type} data. Status: ${response.status}`);
+          const errorMsg = `Failed to fetch ${type} data. Status: ${response.status}`;
+          debug(`Error: ${errorMsg}`);
+          throw new Error(errorMsg);
         }
         
-        const data = await response.json();
-        allData[type] = data;
+        debug(`Response received for ${type}, parsing JSON...`);
+        const text = await response.text();
         
-        if (currentTab === type) {
-          displayItems(allData[type], type);
+        try {
+          // Try to parse the JSON text
+          const data = JSON.parse(text);
+          debug(`JSON parsed successfully for ${type}, items: ${data.length}`);
+          
+          allData[type] = data;
+          
+          if (currentTab === type) {
+            debug(`Current tab is ${type}, displaying items`);
+            displayItems(allData[type], type);
+          }
+        } catch (parseError) {
+          debug(`JSON parse error: ${parseError.message}`);
+          debug(`JSON content: ${text.substring(0, 100)}...`);
+          throw new Error(`Invalid JSON data: ${parseError.message}`);
         }
       } catch (error) {
         console.error(`Error fetching ${type} data:`, error);
+        debug(`Error fetching data: ${error.message}`);
         
         if (currentTab === type) {
           itemList.innerHTML = `
@@ -649,6 +718,8 @@
     
     // Fetch all data
     async function fetchAllData() {
+      debug('Fetching all data');
+      
       // Show loading state for current tab
       itemList.innerHTML = `
         <div class="loading">
@@ -667,6 +738,7 @@
       
       try {
         // Start all fetches concurrently
+        debug(`Starting fetches for: ${types.join(', ')}`);
         const promises = types.map(type => fetchData(type));
         
         // Wait for all fetches to complete
@@ -675,12 +747,15 @@
         showStatus('Data refreshed successfully', 'success');
       } catch (error) {
         console.error('Error refreshing data:', error);
+        debug(`Error refreshing all data: ${error.message}`);
         showStatus('Error refreshing data', 'error');
       }
     }
     
     // Display items in the list
     function displayItems(items, type) {
+      debug(`Displaying ${items ? items.length : 0} ${type} items`);
+      
       if (!items || items.length === 0) {
         itemList.innerHTML = `<div style="text-align:center; padding:20px;">No ${type} found</div>`;
         return;
@@ -707,6 +782,8 @@
     
     // Render tracks
     function renderTracks(tracks) {
+      debug(`Rendering ${tracks.length} tracks`);
+      
       itemList.innerHTML = tracks.map(track => `
         <div class="item" onclick="applyItem('${track.id}', 'tracks')">
           <div class="item-thumbnail" style="background-image: url('${track.imageUrl || 'https://via.placeholder.com/80'}')"></div>
@@ -735,6 +812,8 @@
     
     // Render albums
     function renderAlbums(albums) {
+      debug(`Rendering ${albums.length} albums`);
+      
       itemList.innerHTML = albums.map(album => `
         <div class="item" onclick="applyItem('${album.id}', 'albums')">
           <div class="item-thumbnail" style="background-image: url('${album.imageUrl || 'https://via.placeholder.com/80'}')"></div>
@@ -764,6 +843,8 @@
     
     // Render sound kits
     function renderSoundkits(kits) {
+      debug(`Rendering ${kits.length} sound kits`);
+      
       itemList.innerHTML = kits.map(kit => `
         <div class="item" onclick="applyItem('${kit.id}', 'soundkits')">
           <div class="item-thumbnail" style="background-image: url('${kit.imageUrl || 'https://via.placeholder.com/80'}')"></div>
@@ -777,7 +858,7 @@
               <span>•</span>
               <span>${kit.format || 'N/A'}</span>
               ${kit.sampleCount ? `<span>•</span><span>${kit.sampleCount} samples</span>` : ''}
-              ${kit.presetCount ? `<span>•</span><span>${kit.presetCount} presets</span>` : ''}
+              ${kit.presetCount ? `<span>•</span>${kit.presetCount ? `<span>•</span><span>${kit.presetCount} presets</span>` : ''}
             </div>
             <div class="item-meta" style="margin-top: 4px;">
               ${kit.tags ? kit.tags.map(tag => `<div class="tag">#${tag}</div>`).join('') : ''}
@@ -794,6 +875,8 @@
     
     // Render profiles
     function renderProfiles(profiles) {
+      debug(`Rendering ${profiles.length} profiles`);
+      
       itemList.innerHTML = profiles.map(profile => `
         <div class="item" onclick="applyItem('${profile.id}', 'profiles')">
           <div class="profile-thumbnail" style="background-image: url('${profile.imageUrl || 'https://via.placeholder.com/60'}')"></div>
@@ -825,6 +908,8 @@
     
     // Apply selected item to the Figma selection
     function applyItem(itemId, itemType) {
+      debug(`Applying item ${itemId} of type ${itemType}`);
+      
       const item = allData[itemType].find(i => i.id === itemId);
       
       if (item) {
@@ -837,14 +922,17 @@
             itemType: itemType
           }
         }, '*');
+      } else {
+        debug(`Item ${itemId} not found in ${itemType} data`);
       }
     }
     
     // Filter items based on search term
     function filterItems(searchTerm) {
+      debug(`Filtering ${currentTab} with term: ${searchTerm}`);
+      
       const type = currentTab;
-      const items = all
-const items = allData[type];
+      const items = allData[type];
       
       if (!searchTerm) {
         displayItems(items, type);
@@ -892,6 +980,8 @@ const items = allData[type];
       
       if (!message) return;
       
+      debug(`Received message from plugin: ${message.type}`);
+      
       // Handle success message
       if (message.type === 'apply-success') {
         showStatus(`Applied data to ${message.count} elements! 🎉`, 'success');
@@ -903,8 +993,31 @@ const items = allData[type];
       }
     };
     
-    // Initialize tabs
-    changeTab('tracks');
+    // Add direct debug triggers
+    document.addEventListener('keydown', function(e) {
+      // Ctrl+Shift+D to toggle debug console
+      if (e.ctrlKey && e.shiftKey && e.code === 'KeyD') {
+        debugConsole.style.display = debugConsole.style.display === 'none' ? 'block' : 'none';
+      }
+      
+      // Ctrl+Shift+R to force manual data refresh
+      if (e.ctrlKey && e.shiftKey && e.code === 'KeyR') {
+        debug('Manual refresh triggered via keyboard shortcut');
+        fetchAllData();
+      }
+    });
+    
+    // Execute these functions directly - this ensures initialization happens right away
+    debug('Plugin UI loaded');
+    
+    // Show a startup message
+    showStatus('Welcome to BeatStars Data Cook!', 'info', 2000);
+    
+    // Wait a moment for the UI to settle, then initialize data
+    setTimeout(() => {
+      debug('Starting initial data fetch');
+      fetchAllData();
+    }, 500);
   </script>
 </body>
 </html>
