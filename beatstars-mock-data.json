@@ -1,24 +1,24 @@
 [
   {
     "id": "beat1",
-    "title": "Night Rider",
-    "artist": "Producer XYZ",
+    "title": "For all the dogs",
+    "artist": "Drake & J Cole",
     "price": "$29.99",
-    "genre": "Hip Hop",
-    "bpm": 90,
-    "description": "Smooth hip hop beat with ambient synths and hard-hitting drums. Perfect for emotional rap verses.",
-    "releaseDate": "2023-04-12",
-    "imageUrl": "https://cdn5.beatstars.com/eyJidWNrZXQiOiJwcm9kLWJ0cy10cmFjayIsImtleSI6InByb2QvdHJhY2svYXJ0d29yay9USzMxODcyMTEvZWUucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImZpbGwiLCJ3aWR0aCI6MjQwLCJoZWlnaHQiOjI0MH0sInRvRm9ybWF0Ijoid2VicCJ9fQ==?t=1740855236215"
+    "genre": "Personal with me",
+    "bpm": 88,
+    "description": "I'm really like that",
+    "releaseDate": "NOW!",
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/artwork_1.png"
   },
   {
     "id": "beat2",
-    "title": "Ethereal Dreams",
-    "artist": "Melody Maker",
-    "price": "$39.99",
-    "genre": "Trap",
-    "bpm": 140,
-    "description": "Modern trap beat with atmospheric melodies and booming 808s. Ready for your next hit.",
-    "releaseDate": "2023-05-21",
-    "imageUrl": "https://cdn5.beatstars.com/eyJidWNrZXQiOiJwcm9kLWJ0cy10cmFjayIsImtleSI6InByb2QvdHJhY2svYXJ0d29yay9USzMxODcyMTEvZWUucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImZpbGwiLCJ3aWR0aCI6MjQwLCJoZWlnaHQiOjI0MH0sInRvRm9ybWF0Ijoid2VicCJ9fQ==?t=1740855236215"
-  },
+    "title": "First Person Shooter",
+    "artist": "Drake",
+    "price": "$24.99",
+    "genre": "Hip Hop",
+    "bpm": 92,
+    "description": "Energetic beat with deep bass lines",
+    "releaseDate": "2023-10-15",
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/artwork_2.png"
+  }
 ]
