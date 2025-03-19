@@ -1,1 +1,67 @@
-
+[
+  {
+    "id": "album1",
+    "title": "100 BEATS FOR $100 - Legacy Bundle",
+    "artist": "waytoolost",
+    "price": "$100.00",
+    "genre": "Hip Hop",
+    "description": "Massive collection of 100 premium beats at an incredible value",
+    "releaseDate": "2023-09-01",
+    "trackCount": 100,
+    "tags": ["travis scott", "juice wrld", "drake"],
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_1.png"
+  },
+  {
+    "id": "album2",
+    "title": "50 BEATS by 5 Top Producers (Pack #5 of 5)",
+    "artist": "Rob EVN",
+    "price": "$49.99",
+    "genre": "Trap",
+    "description": "Collection of 50 premium trap beats by industry professionals",
+    "releaseDate": "2023-10-15",
+    "trackCount": 50,
+    "bpm": 140,
+    "tags": ["future", "type beat", "trap"],
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_2.png",
+    "isFree": true
+  },
+  {
+    "id": "album3",
+    "title": "50 Beats For $50 (-97% OFF💯)",
+    "artist": "Rob EVN",
+    "price": "$49.99",
+    "genre": "Trap",
+    "description": "Limited time bundle with massive discount on premium beats",
+    "releaseDate": "2023-11-01",
+    "trackCount": 50,
+    "bpm": 122,
+    "tags": ["drake", "trap", "lil baby"],
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_3.png"
+  },
+  {
+    "id": "album4",
+    "title": "\"Arrest\" | 2+3 FREE | 21 Savage Asap Rocky Drake Type Beat",
+    "artist": "junkey",
+    "price": "$34.95",
+    "genre": "Trap",
+    "description": "Collection of hard-hitting trap beats with 5 tracks including 3 free beats",
+    "releaseDate": "2023-10-20",
+    "trackCount": 5,
+    "bpm": 153,
+    "tags": ["21 savage", "asap rocky", "drake"],
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_4.png"
+  },
+  {
+    "id": "album5",
+    "title": "FORT - 1+9 FREE🔥 BANGER X BOUNCY X FREESTYLE",
+    "artist": "Anywaywell",
+    "price": "$49.99",
+    "genre": "Hip Hop",
+    "description": "10 bouncy freestyle beats with 9 free tracks included",
+    "releaseDate": "2023-09-15",
+    "trackCount": 10,
+    "bpm": 96,
+    "tags": ["freestyle", "hip hop", "trap"],
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_5.png"
+  }
+]
