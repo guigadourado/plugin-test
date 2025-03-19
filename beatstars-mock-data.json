@@ -21,37 +21,4 @@
     "releaseDate": "2023-05-21",
     "imageUrl": "https://cdn5.beatstars.com/eyJidWNrZXQiOiJwcm9kLWJ0cy10cmFjayIsImtleSI6InByb2QvdHJhY2svYXJ0d29yay9USzMxODcyMTEvZWUucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImZpbGwiLCJ3aWR0aCI6MjQwLCJoZWlnaHQiOjI0MH0sInRvRm9ybWF0Ijoid2VicCJ9fQ==?t=1740855236215"
   },
-  {
-    "id": "beat3",
-    "title": "Summer Vibes",
-    "artist": "Beachside Beats",
-    "price": "$24.99",
-    "genre": "Pop",
-    "bpm": 105,
-    "description": "Upbeat pop instrumental with catchy guitar riffs and tropical percussion. Perfect for summer hits.",
-    "releaseDate": "2023-06-15",
-    "imageUrl": "https://cdn5.beatstars.com/eyJidWNrZXQiOiJwcm9kLWJ0cy10cmFjayIsImtleSI6InByb2QvdHJhY2svYXJ0d29yay9USzQ1OTM3NzgvYWEucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImZpbGwiLCJ3aWR0aCI6MjQwLCJoZWlnaHQiOjI0MH0sInRvRm9ybWF0Ijoid2VicCJ9fQ==?t=1740855236218"
-  },
-  {
-    "id": "beat4",
-    "title": "Dark Matter",
-    "artist": "Cosmic Sounds",
-    "price": "$44.99",
-    "genre": "Drill",
-    "bpm": 145,
-    "description": "Heavy UK drill beat with eerie melodies and sliding 808s. Dark and energetic vibe.",
-    "releaseDate": "2023-07-03",
-    "imageUrl": "https://cdn5.beatstars.com/eyJidWNrZXQiOiJwcm9kLWJ0cy10cmFjayIsImtleSI6InByb2QvdHJhY2svYXJ0d29yay9USzY3ODIzMTMvYmIucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImZpbGwiLCJ3aWR0aCI6MjQwLCJoZWlnaHQiOjI0MH0sInRvRm9ybWF0Ijoid2VicCJ9fQ==?t=1740855236220"
-  },
-  {
-    "id": "beat5",
-    "title": "Retro Wave",
-    "artist": "Synthwave Master",
-    "price": "$34.99",
-    "genre": "Synthwave",
-    "bpm": 100,
-    "description": "80s inspired synthwave track with nostalgic vibes, retro synths, and punchy drums.",
-    "releaseDate": "2023-08-12",
-    "imageUrl": "https://cdn5.beatstars.com/eyJidWNrZXQiOiJwcm9kLWJ0cy10cmFjayIsImtleSI6InByb2QvdHJhY2svYXJ0d29yay9USzg5MDEyMzQvZGQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6ImZpbGwiLCJ3aWR0aCI6MjQwLCJoZWlnaHQiOjI0MH0sInRvRm9ybWF0Ijoid2VicCJ9fQ==?t=1740855236222"
-  }
 ]
