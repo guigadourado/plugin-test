@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    :root {
+      --primary-color: #18A0FB;
+      --background-light: #F5F5F5;
+      --background-dark: #1E1E1E;
+      --text-primary: #333;
+      --text-secondary: #666;
+      --border-color: #E0E0E0;
+      --active-tab: #18A0FB;
+      --inactive-tab: #555;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Restore scrollbar with minimal styling */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--text-primary);
+      background-color: var(--background-light);
+    }
+    
+    .app {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      max-height: 100%;
+      background-color: white;
+      position: relative;
+    }
+    
+    .search-container {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      padding: 12px 16px;
+      background-color: var(--background-dark);
+      gap: 8px;
+    }
+    
+    .search-input {
+      flex: 1;
+      padding: 8px 12px;
+      border: 1px solid #444;
+      border-radius: 4px;
+      font-size: 14px;
+      background-color: #2C2C2C;
+      color: white;
+    }
+    
+    .search-input::placeholder {
+      color: #888;
+    }
+    
+    .refresh-btn {
+      background: rgba(255,255,255,0.1);
+      border: none;
+      border-radius: 4px;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    
+    .refresh-btn:hover {
+      background: rgba(255,255,255,0.2);
+    }
+    
+    .refresh-btn svg {
+      width: 18px;
+      height: 18px;
+      stroke: white;
+    }
+    
+    /* Tabs navigation */
+    .tabs-container {
+      background-color: var(--background-dark);
+      display: flex;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .tab {
+      padding: 12px 16px;
+      color: var(--inactive-tab);
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      position: relative;
+      text-align: center;
+      min-width: 80px;
+    }
+    
+    .tab.active {
+      color: var(--active-tab);
+    }
+    
+    .tab.active::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--active-tab);
+    }
+    
+    /* Content area */
+    .item-list {
+      flex: 1;
+      overflow-y: auto;
+      background-color: white;
+      position: relative;
+    }
+    
+    .item {
+      display: flex;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border-color);
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    
+    .item:hover {
+      background-color: var(--background-light);
+    }
+    
+    .item-thumbnail {
+      width: 80px;
+      height: 80px;
+      background-color: var(--background-light);
+      background-size: cover;
+      background-position: center;
+      margin-right: 16px;
+      flex-shrink: 0;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    
+    .profile-thumbnail {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: var(--background-light);
+      background-size: cover;
+      background-position: center;
+      margin-right: 16px;
+      flex-shrink: 0;
+    }
+    
+    .item-details {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .item-title {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 4px;
+      color: var(--text-primary);
+    }
+    
+    .item-artist {
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+    }
+    
+    .item-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      color: var(--text-secondary);
+      font-size: 12px;
+    }
+    
+    .item-description {
+      margin-top: 8px;
+      color: var(--text-secondary);
+      font-size: 12px;
+      max-height: 3em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    .tag {
+      background-color: #f0f0f0;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 11px;
+      color: #555;
+    }
+    
+    .price-tag {
+      font-weight: 600;
+      color: #18A0FB;
+    }
+    
+    .free-tag {
+      font-weight: 600;
+      color: #32CD32;
+    }
+    
+    .verified-badge {
+      color: #18A0FB;
+      font-size: 14px;
+      margin-left: 4px;
+    }
+    
+    /* Status message styles */
+    .status-message {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 16px;
+      border-radius: 4px;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      z-index: 100;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .status-message.visible {
+      opacity: 1;
+    }
+    
+    .status-message.success {
+      background-color: #4CAF50;
+      color: white;
+    }
+    
+    .status-message.error {
+      background-color: #F44336;
+      color: white;
+    }
+    
+    .status-message.info {
+      background-color: #2196F3;
+      color: white;
+    }
+    
+    /* Loading indicator */
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 20px;
+      text-align: center;
+      color: var(--text-secondary);
+    }
+    
+    .spinner {
+      border: 3px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      border-top: 3px solid var(--primary-color);
+      width: 24px;
+      height: 24px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 10px auto;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Help section styles */
+    .help-content {
+      padding: 20px;
+      max-width: 100%;
+      overflow-y: auto;
+    }
+
+    .help-content h2 {
+      font-size: 18px;
+      margin-bottom: 16px;
+      color: var(--primary-color);
+    }
+
+    .help-content h3 {
+      font-size: 16px;
+      margin: 16px 0 8px 0;
+    }
+
+    .help-content p {
+      margin-bottom: 12px;
+      font-size: 14px;
+      color: var(--text-primary);
+    }
+
+    .help-content ul {
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+
+    .help-content li {
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .help-section {
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 16px;
+    }
+
+    .help-section:last-child {
+      border-bottom: none;
+    }
+
+    .help-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 13px;
+    }
+
+    .help-table th {
+      background-color: #f5f5f5;
+      text-align: left;
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+
+    .help-table td {
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+
+    /* Resizable handle */
+    .resize-handle {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      cursor: nwse-resize;
+      background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath fill='rgba(0,0,0,0.2)' d='M8 8L0 16h16L8 8zm7 7h-1v1h1v-1zm-2 0h-1v1h1v-1zm-2 0h-1v1h1v-1zm-2 0h-1v1h1v-1z'/%3E%3C/svg%3E") no-repeat center center;
+      z-index: 99;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="search-container">
+      <input type="text" class="search-input" id="search-input" placeholder="Search by title or artist..." />
+      <button class="refresh-btn" onclick="fetchAllData()" title="Refresh Data">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M23 4v6h-6"></path>
+          <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="tabs-container">
+      <div class="tab active" data-type="tracks" onclick="changeTab('tracks')">Tracks</div>
+      <div class="tab" data-type="albums" onclick="changeTab('albums')">Albums</div>
+      <div class="tab" data-type="soundkits" onclick="changeTab('soundkits')">Sound Kits</div>
+      <div class="tab" data-type="profiles" onclick="changeTab('profiles')">Profiles</div>
+      <div class="tab" data-type="help" onclick="changeTab('help')">Help</div>
+    </div>
+    
+    <div class="item-list" id="item-list">
+      <div class="loading">
+        <div>
+          <div class="spinner"></div>
+          <p>Loading...</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="status-message" id="status-message"></div>
+    <div class="resize-handle" id="resize-handle"></div>
+  </div>
+
+  <script>
+    // Base URL for all JSON files
+    const BASE_URL = "https://raw.githubusercontent.com/guigadourado/plugin-test/main/";
+    
+    // Data files and their paths
+    const DATA_FILES = {
+      tracks: "data-tracks.json",
+      albums: "data-albums.json",
+      soundkits: "data-soundkits.json",
+      profiles: "data-profiles.json"
+    };
+    
+    // DOM elements
+    const itemList = document.getElementById('item-list');
+    const searchInput = document.getElementById('search-input');
+    const statusMessage = document.getElementById('status-message');
+    const tabs = document.querySelectorAll('.tab');
+    const resizeHandle = document.getElementById('resize-handle');
+    
+    // Data storage
+    let allData = {
+      tracks: [],
+      albums: [],
+      soundkits: [],
+      profiles: []
+    };
+    
+    // Current active tab
+    let currentTab = 'tracks';
+
+    // Make the plugin resizable
+    resizeHandle.addEventListener('mousedown', initResize, false);
+
+    function initResize(e) {
+      window.addEventListener('mousemove', resize, false);
+      window.addEventListener('mouseup', stopResize, false);
+    }
+
+    function resize(e) {
+      // Send message to resize plugin UI
+      parent.postMessage({
+        pluginMessage: {
+          type: 'resize',
+          width: e.clientX,
+          height: e.clientY
+        }
+      }, '*');
+    }
+
+    function stopResize(e) {
+      window.removeEventListener('mousemove', resize, false);
+      window.removeEventListener('mouseup', stopResize, false);
+    }
+
+    // Show status message
+    function showStatus(message, type = 'info', duration = 3000) {
+      statusMessage.textContent = message;
+      statusMessage.className = `status-message ${type} visible`;
+      
+      setTimeout(() => {
+        statusMessage.className = 'status-message';
+      }, duration);
+    }
+
+    // Change active tab
+    function changeTab(tabType) {
+      if (tabType === currentTab) return;
+      
+      // Update active tab UI
+      tabs.forEach(tab => {
+        if (tab.dataset.type === tabType) {
+          tab.classList.add('active');
+        } else {
+          tab.classList.remove('active');
+        }
+      });
+      
+      currentTab = tabType;
+      
+      if (tabType === 'help') {
+        renderHelpContent();
+        searchInput.disabled = true;
+        searchInput.placeholder = 'Search disabled in help section';
+        return;
+      } else {
+        searchInput.disabled = false;
+      }
+      
+      // Update placeholder text based on tab type
+      switch(tabType) {
+        case 'tracks':
+          searchInput.placeholder = 'Search tracks by title or artist...';
+          break;
+        case 'albums':
+          searchInput.placeholder = 'Search albums by title or artist...';
+          break;
+        case 'soundkits':
+          searchInput.placeholder = 'Search sound kits by title or creator...';
+          break;
+        case 'profiles':
+          searchInput.placeholder = 'Search producers by name or genre...';
+          break;
+      }
+      
+      // Check if we have data for this tab
+      if (allData[tabType] && allData[tabType].length > 0) {
+        displayItems(allData[tabType], tabType);
+      } else {
+        // Show loading state
+        itemList.innerHTML = `
+          <div class="loading">
+            <div>
+              <div class="spinner"></div>
+              <p>Loading ${tabType}...</p>
+            </div>
+          </div>
+        `;
+        
+        // Fetch data for this tab
+        fetchData(tabType);
+      }
+    }
+
+    // Render help content
+    function renderHelpContent() {
+      itemList.innerHTML = `
+        <div class="help-content">
+          <div class="help-section">
+            <h2>Layer Naming Guide</h2>
+            <p>Name your Figma layers using these conventions to properly map data:</p>
+          </div>
+
+          <div class="help-section">
+            <h3>Tracks</h3>
+            <ul>
+              <li><strong>title</strong> - Track title</li>
+              <li><strong>artist</strong> - Artist name</li>
+              <li><strong>price</strong> - Track price</li>
+              <li><strong>genre</strong> - Musical genre</li>
+              <li><strong>bpm</strong> - Beats per minute</li>
+              <li><strong>description</strong> or <strong>desc</strong> - Track description</li>
+              <li><strong>date</strong> or <strong>release</strong> - Release date</li>
+              <li><strong>artwork</strong>, <strong>image</strong>, or <strong>cover</strong> - For cover artwork (rectangle or frame)</li>
+            </ul>
+          </div>
+
+          <div class="help-section">
+            <h3>Albums</h3>
+            <ul>
+              <li><strong>title</strong> - Album title</li>
+              <li><strong>artist</strong> - Artist name</li>
+              <li><strong>price</strong> - Album price</li>
+              <li><strong>genre</strong> - Musical genre</li>
+              <li><strong>tracks</strong> or <strong>count</strong> - Number of tracks</li>
+              <li><strong>description</strong> or <strong>desc</strong> - Album description</li>
+              <li><strong>date</strong> or <strong>release</strong> - Release date</li>
+              <li><strong>artwork</strong>, <strong>image</strong>, or <strong>cover</strong> - For album artwork (rectangle or frame)</li>
+            </ul>
+          </div>
+
+          <div class="help-section">
+            <h3>Sound Kits</h3>
+            <ul>
+              <li><strong>title</strong> - Sound kit title</li>
+              <li><strong>artist</strong> or <strong>creator</strong> - Creator name</li>
+              <li><strong>price</strong> - Sound kit price</li>
+              <li><strong>genre</strong> - Musical genre</li>
+              <li><strong>format</strong> - File format (WAV, MIDI, etc.)</li>
+              <li><strong>samples</strong> or <strong>count</strong> - Number of samples</li>
+              <li><strong>presets</strong> - Number of presets</li>
+              <li><strong>description</strong> or <strong>desc</strong> - Sound kit description</li>
+              <li><strong>artwork</strong>, <strong>image</strong>, or <strong>cover</strong> - For kit artwork (rectangle or frame)</li>
+            </ul>
+          </div>
+
+          <div class="help-section">
+            <h3>Profiles</h3>
+            <ul>
+              <li><strong>name</strong> - Producer name</li>
+              <li><strong>username</strong> or <strong>handle</strong> - Social media handle</li>
+              <li><strong>location</strong> - Producer location</li>
+              <li><strong>followers</strong> - Follower count</li>
+              <li><strong>tracks</strong> - Number of tracks</li>
+              <li><strong>sales</strong> - Number of sales</li>
+              <li><strong>description</strong> or <strong>desc</strong> - Profile description</li>
+              <li><strong>avatar</strong>, <strong>photo</strong>, or <strong>image</strong> - For profile picture (circle or frame)</li>
+            </ul>
+          </div>
+          
+          <div class="help-section">
+            <h3>Quick Tips</h3>
+            <ul>
+              <li>Select elements in Figma before applying data</li>
+              <li>Group related elements for easier selection</li>
+              <li>Images are applied with aspect ratio preserved</li>
+              <li>Drag the bottom-right corner to resize this window</li>
+            </ul>
+          </div>
+        </div>
+      `;
+    }
+    
+    // Fetch data for a specific type
+    async function fetchData(type) {
+      try {
+        const response = await fetch(BASE_URL + DATA_FILES[type]);
+        
+        if (!response.ok) {
+          throw new Error(`Failed to fetch ${type} data. Status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        allData[type] = data;
+        
+        if (currentTab === type) {
+          displayItems(allData[type], type);
+        }
+      } catch (error) {
+        console.error(`Error fetching ${type} data:`, error);
+        
+        if (currentTab === type) {
+          itemList.innerHTML = `
+            <div style="text-align:center; color:red; padding:20px;">
+              Failed to load ${type}<br>
+              <small>${error.message}</small>
+            </div>
+          `;
+        }
+      }
+    }
+    
+    // Fetch all data
+    async function fetchAllData() {
+      // Show loading state for current tab
+      itemList.innerHTML = `
+        <div class="loading">
+          <div>
+            <div class="spinner"></div>
+            <p>Loading ${currentTab}...</p>
+          </div>
+        </div>
+      `;
+      
+      // Clear search input
+      searchInput.value = '';
+      
+      // Fetch data for all tabs
+      const types = Object.keys(DATA_FILES);
+      
+      try {
+        // Start all fetches concurrently
+        const promises = types.map(type => fetchData(type));
+        
+        // Wait for all fetches to complete
+        await Promise.allSettled(promises);
+        
+        showStatus('Data refreshed successfully', 'success');
+      } catch (error) {
+        console.error('Error refreshing data:', error);
+        showStatus('Error refreshing data', 'error');
+      }
+    }
+    
+    // Display items in the list
+    function displayItems(items, type) {
+      if (!items || items.length === 0) {
+        itemList.innerHTML = `<div style="text-align:center; padding:20px;">No ${type} found</div>`;
+        return;
+      }
+      
+      // Different rendering based on content type
+      switch(type) {
+        case 'tracks':
+          renderTracks(items);
+          break;
+        case 'albums':
+          renderAlbums(items);
+          break;
+        case 'soundkits':
+          renderSoundkits(items);
+          break;
+        case 'profiles':
+          renderProfiles(items);
+          break;
+        default:
+          itemList.innerHTML = `<div style="text-align:center; padding:20px;">Unknown content type</div>`;
+      }
+    }
+    
+    // Render tracks
+    function renderTracks(tracks) {
+      itemList.innerHTML = tracks.map(track => `
+        <div class="item" onclick="applyItem('${track.id}', 'tracks')">
+          <div class="item-thumbnail" style="background-image: url('${track.imageUrl || 'https://via.placeholder.com/80'}')"></div>
+          <div class="item-details">
+            <div class="item-title">${track.title || 'Untitled'}</div>
+            <div class="item-artist">${track.artist || 'Unknown Artist'}</div>
+            <div class="item-meta">
+              <span>${track.genre || 'No Genre'}</span>
+              <span>•</span>
+              <span class="${track.isFree ? 'free-tag' : 'price-tag'}">${track.isFree ? 'FREE' : track.price || 'N/A'}</span>
+              <span>•</span>
+              <span>${track.bpm ? `${track.bpm} BPM` : 'N/A BPM'}</span>
+            </div>
+            <div class="item-meta" style="margin-top: 4px;">
+              ${track.tags ? track.tags.map(tag => `<div class="tag">#${tag}</div>`).join('') : ''}
+            </div>
+            ${track.description ? `
+              <div class="item-description">
+                ${track.description}
+              </div>
+            ` : ''}
+          </div>
+        </div>
+      `).join('');
+    }
+    
+    // Render albums
+    function renderAlbums(albums) {
+      itemList.innerHTML = albums.map(album => `
+        <div class="item" onclick="applyItem('${album.id}', 'albums')">
+          <div class="item-thumbnail" style="background-image: url('${album.imageUrl || 'https://via.placeholder.com/80'}')"></div>
+          <div class="item-details">
+            <div class="item-title">${album.title || 'Untitled Album'}</div>
+            <div class="item-artist">${album.artist || 'Unknown Artist'}</div>
+            <div class="item-meta">
+              <span>${album.genre || 'No Genre'}</span>
+              <span>•</span>
+              <span class="${album.isFree ? 'free-tag' : 'price-tag'}">${album.isFree ? 'FREE' : album.price || 'N/A'}</span>
+              <span>•</span>
+              <span>${album.trackCount ? `${album.trackCount} tracks` : 'N/A tracks'}</span>
+              ${album.bpm ? `<span>•</span><span>${album.bpm} BPM</span>` : ''}
+            </div>
+            <div class="item-meta" style="margin-top: 4px;">
+              ${album.tags ? album.tags.map(tag => `<div class="tag">#${tag}</div>`).join('') : ''}
+            </div>
+            ${album.description ? `
+              <div class="item-description">
+                ${album.description}
+              </div>
+            ` : ''}
+          </div>
+        </div>
+      `).join('');
+    }
+    
+    // Render sound kits
+    function renderSoundkits(kits) {
+      itemList.innerHTML = kits.map(kit => `
+        <div class="item" onclick="applyItem('${kit.id}', 'soundkits')">
+          <div class="item-thumbnail" style="background-image: url('${kit.imageUrl || 'https://via.placeholder.com/80'}')"></div>
+          <div class="item-details">
+            <div class="item-title">${kit.title || 'Untitled Sound Kit'}</div>
+            <div class="item-artist">${kit.artist || 'Unknown Creator'}</div>
+            <div class="item-meta">
+              <span>${kit.genre || 'No Genre'}</span>
+              <span>•</span>
+              <span class="${kit.isFree ? 'free-tag' : 'price-tag'}">${kit.isFree ? 'FREE' : kit.price || 'N/A'}</span>
+              <span>•</span>
+              <span>${kit.format || 'N/A'}</span>
+              ${kit.sampleCount ? `<span>•</span><span>${kit.sampleCount} samples</span>` : ''}
+              ${kit.presetCount ? `<span>•</span><span>${kit.presetCount} presets</span>` : ''}
+            </div>
+            <div class="item-meta" style="margin-top: 4px;">
+              ${kit.tags ? kit.tags.map(tag => `<div class="tag">#${tag}</div>`).join('') : ''}
+            </div>
+            ${kit.description ? `
+              <div class="item-description">
+                ${kit.description}
+              </div>
+            ` : ''}
+          </div>
+        </div>
+      `).join('');
+    }
+    
+    // Render profiles
+    function renderProfiles(profiles) {
+      itemList.innerHTML = profiles.map(profile => `
+        <div class="item" onclick="applyItem('${profile.id}', 'profiles')">
+          <div class="profile-thumbnail" style="background-image: url('${profile.imageUrl || 'https://via.placeholder.com/60'}')"></div>
+          <div class="item-details">
+            <div class="item-title">
+              ${profile.name || 'Unknown Producer'}
+              ${profile.isVerified ? '<span class="verified-badge">✓</span>' : ''}
+            </div>
+            <div class="item-artist">${profile.username || ''} ${profile.location ? `• ${profile.location}` : ''}</div>
+            <div class="item-meta">
+              <span>${profile.genre || 'No Genre'}</span>
+              <span>•</span>
+              <span>${profile.followers ? `${profile.followers.toLocaleString()} followers` : 'N/A followers'}</span>
+              <span>•</span>
+              <span>${profile.tracksCount ? `${profile.tracksCount} tracks` : 'N/A tracks'}</span>
+            </div>
+            <div class="item-meta" style="margin-top: 4px;">
+              ${profile.tags ? profile.tags.map(tag => `<div class="tag">${tag}</div>`).join('') : ''}
+            </div>
+            ${profile.description ? `
+              <div class="item-description">
+                ${profile.description}
+              </div>
+            ` : ''}
+          </div>
+        </div>
+      `).join('');
+    }
+    
+    // Apply selected item to the Figma selection
+    function applyItem(itemId, itemType) {
+      const item = allData[itemType].find(i => i.id === itemId);
+      
+      if (item) {
+        showStatus(`Applying ${itemType.slice(0, -1)} to selection...`, 'info');
+        
+        parent.postMessage({
+          pluginMessage: {
+            type: 'apply-item',
+            item: item,
+            itemType: itemType
+          }
+        }, '*');
+      }
+    }
+    
+    // Filter items based on search term
+    function filterItems(searchTerm) {
+      const type = currentTab;
+      const items = allData
+// Filter items based on search term
+    function filterItems(searchTerm) {
+      const type = currentTab;
+      const items = allData[type];
+      
+      if (!searchTerm) {
+        displayItems(items, type);
+        return;
+      }
+      
+      const term = searchTerm.toLowerCase();
+      let filteredItems;
+      
+      switch(type) {
+        case 'tracks':
+        case 'albums':
+        case 'soundkits':
+          filteredItems = items.filter(item => 
+            (item.title && item.title.toLowerCase().includes(term)) ||
+            (item.artist && item.artist.toLowerCase().includes(term)) ||
+            (item.genre && item.genre.toLowerCase().includes(term)) ||
+            (item.description && item.description.toLowerCase().includes(term)) ||
+            (item.tags && item.tags.some(tag => tag.toLowerCase().includes(term)))
+          );
+          break;
+        case 'profiles':
+          filteredItems = items.filter(profile => 
+            (profile.name && profile.name.toLowerCase().includes(term)) ||
+            (profile.username && profile.username.toLowerCase().includes(term)) ||
+            (profile.location && profile.location.toLowerCase().includes(term)) ||
+            (profile.genre && profile.genre.toLowerCase().includes(term)) ||
+            (profile.description && profile.description.toLowerCase().includes(term)) ||
+            (profile.tags && profile.tags.some(tag => tag.toLowerCase().includes(term)))
+          );
+          break;
+      }
+      
+      displayItems(filteredItems, type);
+    }
+    
+    // Search functionality
+    searchInput.addEventListener('input', function() {
+      filterItems(this.value);
+    });
+    
+    // Listen for messages from the plugin code
+    window.onmessage = async (event) => {
+      const message = event.data.pluginMessage;
+      
+      if (!message) return;
+      
+      // Handle success message
+      if (message.type === 'apply-success') {
+        showStatus(`Applied data to ${message.count} elements! 🎉`, 'success');
+      }
+      
+      // Handle error message
+      if (message.type === 'apply-error') {
+        showStatus(`Error: ${message.error}`, 'error');
+      }
+    };
+    
+    // Initialize tabs
+    changeTab('tracks');
+  </script>
+</body>
+</html>
