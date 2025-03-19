@@ -1,5 +1,5 @@
 [
-{
+  {
     "id": "beat1",
     "title": "For all the dogs",
     "artist": "Drake & J Cole",
@@ -8,6 +8,17 @@
     "bpm": 88,
     "description": "I'm really like that",
     "releaseDate": "NOW!",
-    "imageUrl": "https://github.com/guigadourado/plugin-test/blob/main/artworks/artwork_1.png"
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/artwork_1.png"
   },
+  {
+    "id": "beat2",
+    "title": "First Person Shooter",
+    "artist": "Drake",
+    "price": "$24.99",
+    "genre": "Hip Hop",
+    "bpm": 92,
+    "description": "Energetic beat with deep bass lines",
+    "releaseDate": "2023-10-15",
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/artwork_2.png"
+  }
 ]
