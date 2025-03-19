@@ -1,13 +1,13 @@
 [
 {
     "id": "beat1",
-    "title": "Night Rider",
-    "artist": "Producer XYZ",
+    "title": "For all the dogs",
+    "artist": "Drake & J Cole",
     "price": "$29.99",
-    "genre": "Hip Hop",
-    "bpm": 90,
-    "description": "Smooth hip hop beat with ambient synths and hard-hitting drums. Perfect for emotional rap verses.",
-    "releaseDate": "2023-04-12",
+    "genre": "Personal with me",
+    "bpm": 88,
+    "description": "I'm really like that",
+    "releaseDate": "NOW!",
     "imageUrl": "https://github.com/guigadourado/plugin-test/blob/main/artworks/artwork_1.png"
   },
 ]
