@@ -1,67 +1,162 @@
 [
   {
     "id": "album1",
-    "title": "100 BEATS FOR $100 - Legacy Bundle",
-    "artist": "waytoolost",
-    "price": "$100.00",
-    "genre": "Hip Hop",
-    "description": "Massive collection of 100 premium beats at an incredible value",
-    "releaseDate": "2023-09-01",
-    "trackCount": 100,
-    "tags": ["travis scott", "juice wrld", "drake"],
+    "title": "TOP 50 BEATS FOR 50$ \"AGONY COLLECTION\"",
+    "artist": "prodbyroth",
+    "price": "$59.99",
+    "trackCount": 20,
     "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_1.png"
   },
   {
     "id": "album2",
-    "title": "50 BEATS by 5 Top Producers (Pack #5 of 5)",
-    "artist": "Rob EVN",
-    "price": "$49.99",
-    "genre": "Trap",
-    "description": "Collection of 50 premium trap beats by industry professionals",
-    "releaseDate": "2023-10-15",
-    "trackCount": 50,
-    "bpm": 140,
-    "tags": ["future", "type beat", "trap"],
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_2.png",
-    "isFree": true
+    "title": "Club Infinity- Uptempo",
+    "artist": "recoxl",
+    "price": "$99.99",
+    "trackCount": 60,
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_2.png"
   },
   {
     "id": "album3",
-    "title": "50 Beats For $50 (-97% OFF💯)",
-    "artist": "Rob EVN",
-    "price": "$49.99",
-    "genre": "Trap",
-    "description": "Limited time bundle with massive discount on premium beats",
-    "releaseDate": "2023-11-01",
-    "trackCount": 50,
-    "bpm": 122,
-    "tags": ["drake", "trap", "lil baby"],
+    "title": "TRAP CODE: VOLUME ONE",
+    "artist": "recoxl",
+    "price": "$89.99",
+    "trackCount": 71,
     "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_3.png"
   },
   {
     "id": "album4",
-    "title": "\"Arrest\" | 2+3 FREE | 21 Savage Asap Rocky Drake Type Beat",
-    "artist": "junkey",
-    "price": "$34.95",
-    "genre": "Trap",
-    "description": "Collection of hard-hitting trap beats with 5 tracks including 3 free beats",
-    "releaseDate": "2023-10-20",
-    "trackCount": 5,
-    "bpm": 153,
-    "tags": ["21 savage", "asap rocky", "drake"],
+    "title": "-25% OFF!!! Memphis Trap Sampled Beatpack !!!",
+    "artist": "prodbabyspace",
+    "price": "$59.99",
+    "trackCount": 61,
     "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_4.png"
   },
   {
     "id": "album5",
-    "title": "FORT - 1+9 FREE🔥 BANGER X BOUNCY X FREESTYLE",
-    "artist": "Anywaywell",
-    "price": "$49.99",
-    "genre": "Hip Hop",
-    "description": "10 bouncy freestyle beats with 9 free tracks included",
-    "releaseDate": "2023-09-15",
-    "trackCount": 10,
-    "bpm": 96,
-    "tags": ["freestyle", "hip hop", "trap"],
+    "title": "\ud83d\udd25100 BEATS FOR $100 - Legacy Bundle",
+    "artist": "waytoolost",
+    "price": "$100.00",
+    "trackCount": 3,
     "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_5.png"
+  },
+  {
+    "id": "album6",
+    "title": "50 BEATS FOR $50 \ud83d\udd25 LUCKI EDITION | EXPIRES SOON",
+    "artist": "waytoolost",
+    "price": "$50.00",
+    "trackCount": 93,
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_6.png"
+  },
+  {
+    "id": "album7",
+    "title": "R&B SZA Type Beat Bulk Discount",
+    "artist": "jofis",
+    "price": "$49.99",
+    "trackCount": 6,
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_7.png"
+  },
+  {
+    "id": "album8",
+    "title": "OTHELLO BEATS PACK 009 - FOR RAPPERS WHO GOT SUM TO SAY",
+    "artist": "othellobeats",
+    "price": "$69.99",
+    "trackCount": 32,
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_8.png"
+  },
+  {
+    "id": "album9",
+    "title": "50 BEATS FOR $50",
+    "artist": "boger",
+    "price": "$50.00",
+    "trackCount": 46,
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_9.png"
+  },
+  {
+    "id": "album10",
+    "title": "\ud83d\udd25 HOT DEAL | 35 BEATS FOR JUST $35",
+    "artist": "awakeagain",
+    "price": "$35.00",
+    "trackCount": 47,
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_10.png"
+  },
+  {
+    "id": "album11",
+    "title": "Grey October (Limited Edition Beat Tape)",
+    "artist": "chxsebank",
+    "price": "$69.99",
+    "trackCount": 14,
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_11.png"
+  },
+  {
+    "id": "album12",
+    "title": "JIGGY",
+    "artist": "prodbydefault",
+    "price": "$39.99",
+    "trackCount": 84,
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_12.png"
+  },
+  {
+    "id": "album13",
+    "title": "2025 BEATS \ud83d\udd25",
+    "artist": "syndromebeats",
+    "price": "$99.99",
+    "trackCount": 97,
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_13.png"
+  },
+  {
+    "id": "album14",
+    "title": "Type Beat Tapes",
+    "artist": "justclayton",
+    "price": "$89.99",
+    "trackCount": 22,
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_14.png"
+  },
+  {
+    "id": "album15",
+    "title": "EASTER Gifts \ud83d\udd25 DRILL, TRAP, RNB, AFRO (TYPE BEAT)",
+    "artist": "Nel95musik",
+    "price": "$69.99",
+    "trackCount": 19,
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_15.png"
+  },
+  {
+    "id": "album16",
+    "title": "Post Punk Type Beats that will cure your writers block",
+    "artist": "centerkiddo",
+    "price": "$29.99",
+    "trackCount": 28,
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_16.png"
+  },
+  {
+    "id": "album17",
+    "title": "30 Beats For 30$ + 10 FREE BEATS!",
+    "artist": "granyt",
+    "price": "$49.99",
+    "trackCount": 3,
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_17.png"
+  },
+  {
+    "id": "album18",
+    "title": "Heavenly Beat Pack",
+    "artist": "griffinbrown3609It",
+    "price": "$79.99",
+    "trackCount": 41,
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_18.png"
+  },
+  {
+    "id": "album19",
+    "title": "50 Beats 50 Dollars UNLIMITED",
+    "artist": "radbeatss",
+    "price": "$69.99",
+    "trackCount": 63,
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_19.png"
+  },
+  {
+    "id": "album20",
+    "title": "\ud83d\udd25 100 Beat Vault \u2013 The Ultimate Rapper\u2019s Collection ($50)",
+    "artist": "yochedder",
+    "price": "$50.00",
+    "trackCount": 63,
+    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_20.png"
   }
 ]
