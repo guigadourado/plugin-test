@@ -1,94 +1,167 @@
 [
   {
-    "id": "profile1",
-    "name": "Loudestro R&B",
-    "username": "@loudestro",
-    "location": "Virginia",
-    "description": "Hit notification bell to get notified when I post a new beat instagram: @loudestro business email: loudestro.beats@gmail.com",
-    "genre": "R&B",
-    "followers": 5420,
+    "id": "MR1500881",
+    "name": "UNION.",
+    "username": "jackunion",
+    "location": "VA",
+    "imageUrl": "https://content.beatstars.com/prod/profile/avatar/MPMR1500881/avatar.jpeg",
+    "followers": 5240,
+    "tracksCount": 48,
+    "playsCount": 143270,
+    "salesCount": 532
+  },
+  {
+    "id": "MR522368",
+    "name": "IOF",
+    "username": "prodbyiof",
+    "location": "Thessaloniki, Greece",
+    "imageUrl": "https://bts-content.s3.amazonaws.com/users/prod/522368/image/60xeKM5IfVz7/522368.png",
+    "followers": 8740,
+    "tracksCount": 212,
+    "playsCount": 254800,
+    "salesCount": 978
+  },
+  {
+    "id": "MR2881076",
+    "name": "ProdKult",
+    "username": "prodkult",
+    "location": "Canada",
+    "imageUrl": "https://content.beatstars.com/users/prod/2881076/image/1711554088/official-prod-kult-logowqwq.png",
+    "followers": 12580,
     "tracksCount": 156,
-    "salesCount": 2340,
-    "tags": ["R&B", "Hip Hop", "Trap"],
-    "socialMedia": {
-      "instagram": "@loudestro",
-      "youtube": "LoudestroBeats",
-      "twitter": "@loudestro_beats"
-    },
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/profile_1.png"
+    "playsCount": 380950,
+    "salesCount": 842
   },
   {
-    "id": "profile2",
-    "name": "Albrey Beats",
-    "username": "@albreybeats",
-    "location": "Le Tampon",
-    "description": "High quality industry Beats Amapiano/Afrobeat/Dancehall/Hip Hop and more... Beats , if you're looking for fire sound in Industry quality",
-    "genre": "Afrobeat/Hip Hop",
-    "followers": 3850,
-    "tracksCount": 203,
-    "salesCount": 1876,
-    "tags": ["Afrobeat", "Amapiano", "Dancehall", "Hip Hop"],
-    "socialMedia": {
-      "instagram": "@albrey_beats",
-      "youtube": "AlbreyBeatsOfficial",
-      "twitter": "@albreybeats"
-    },
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/profile_2.png"
-  },
-  {
-    "id": "profile3",
-    "name": "Kontrabandz",
-    "username": "@kontrabandz",
-    "description": "Buy 1 Get 9 Free ⚡ Get 10 beats for $199 (STEMS+FULL UNLIMITED) Add up to 10 beats with the same license",
-    "genre": "Hip Hop/Trap",
-    "followers": 9240,
-    "tracksCount": 312,
-    "salesCount": 4560,
-    "isVerified": true,
-    "tags": ["Hip Hop", "Trap", "Drill"],
-    "socialMedia": {
-      "instagram": "@kontrabandz",
-      "youtube": "KontrabandzBeats",
-      "twitter": "@kontrabandz"
-    },
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/profile_3.png"
-  },
-  {
-    "id": "profile4",
-    "name": "Rob EVN",
-    "username": "@robevn",
-    "location": "Los Angeles",
-    "description": "Grammy nominated producer. Working with major artists since 2015. High quality beats with commercial rights included.",
-    "genre": "Hip Hop/Trap",
-    "followers": 12500,
-    "tracksCount": 457,
-    "salesCount": 8967,
-    "isVerified": true,
-    "tags": ["Hip Hop", "Trap", "R&B"],
-    "socialMedia": {
-      "instagram": "@rob_evn",
-      "youtube": "RobEVNBeats",
-      "twitter": "@rob_evn"
-    },
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/profile_4.png"
-  },
-  {
-    "id": "profile5",
-    "name": "waytoolost",
-    "username": "@waytoolost",
-    "location": "New York",
-    "description": "Premium beats and bundles. Working with top artists in the industry. Subscribe to my channel for free beats every week.",
-    "genre": "Hip Hop/Trap",
+    "id": "MR7523019",
+    "name": "Gotenkeys",
+    "username": "Gotenkeysbeats",
+    "location": "Anywaywell",
+    "imageUrl": "https://content.beatstars.com/users/prod/7523019/image/1740035587/2025-02-20-101239.jpg",
     "followers": 7830,
-    "tracksCount": 289,
-    "salesCount": 3456,
-    "isVerified": true,
-    "tags": ["Hip Hop", "Trap", "Drill"],
-    "socialMedia": {
-      "instagram": "@waytoolost",
-      "youtube": "waytoolostbeats",
-      "twitter": "@waytoolost"
-    },
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/profile_5.png"
+    "tracksCount": 185,
+    "playsCount": 245390,
+    "salesCount": 735
+  },
+  {
+    "id": "MR1563403",
+    "name": "Damerunitup",
+    "username": "damerunitup",
+    "location": "$30 UNLIMITED SALE (BUY 2 GET 3 FREE)",
+    "imageUrl": "https://content.beatstars.com/users/prod/1563403/image/1741886273/clean-chrome-ish.png",
+    "followers": 21450,
+    "tracksCount": 278,
+    "playsCount": 1245680,
+    "salesCount": 3421
+  },
+  {
+    "id": "MR2341061",
+    "name": "LickOwens",
+    "username": "lickowens",
+    "location": "United States",
+    "imageUrl": "https://content.beatstars.com/users/prod/2341061/image/1609729648/20210104113557uf1609729584718uf1609729594375uf1609729639105.png",
+    "followers": 9520,
+    "tracksCount": 142,
+    "playsCount": 327840,
+    "salesCount": 1245
+  },
+  {
+    "id": "MR3707071",
+    "name": "BENJI PROD",
+    "username": "benjiproducti0n",
+    "location": "⚠️ -25% PROMOCODE \"SALE25\" ⚠️",
+    "imageUrl": "https://content.beatstars.com/users/prod/3707071/image/1699724034/7771.png",
+    "followers": 18760,
+    "tracksCount": 324,
+    "playsCount": 965420,
+    "salesCount": 2780
+  },
+  {
+    "id": "MR1492523",
+    "name": "offsneakbeats",
+    "username": "offsneak",
+    "location": "USA",
+    "imageUrl": "https://content.beatstars.com/users/prod/1492523/image/1688495414/img-20230607-wa0001-2-.jpg",
+    "followers": 25430,
+    "tracksCount": 198,
+    "playsCount": 1345720,
+    "salesCount": 3125
+  },
+  {
+    "id": "MR187336",
+    "name": "Kontrabandz",
+    "username": "kontrabandz",
+    "location": "No \"SERVICE FEE\" at thekontrabandz.com",
+    "imageUrl": "https://bts-content.s3.amazonaws.com/users/prod/187336/image/7s9NyonDijSd/187336.jpg",
+    "followers": 42850,
+    "tracksCount": 412,
+    "playsCount": 3245890,
+    "salesCount": 7840
+  },
+  {
+    "id": "MR6111786",
+    "name": "4_head",
+    "username": "phourhead",
+    "location": "Chicago",
+    "imageUrl": "https://content.beatstars.com/prod/profile/avatar/MPMR6111786/avatar.jpg",
+    "followers": 2480,
+    "tracksCount": 64,
+    "playsCount": 87450,
+    "salesCount": 345
+  },
+  {
+    "id": "MR3040476",
+    "name": "Davy's Gray",
+    "username": "davysgraymusic",
+    "location": "New York",
+    "imageUrl": "https://content.beatstars.com/prod/profile/avatar/MPMR3040476/avatar.jpg",
+    "followers": 5240,
+    "tracksCount": 87,
+    "playsCount": 125480,
+    "salesCount": 520
+  },
+  {
+    "id": "MR375341",
+    "name": "Buckroll",
+    "username": "buckroll",
+    "location": "Hamburg, Germany",
+    "imageUrl": "https://bts-content.s3.amazonaws.com/users/prod/375341/image/yjfgQclX6h2n/375341.jpg",
+    "followers": 8740,
+    "tracksCount": 156,
+    "playsCount": 342680,
+    "salesCount": 1245
+  },
+  {
+    "id": "MR3438197",
+    "name": "junkey",
+    "username": "junkie4real",
+    "location": "Gallery",
+    "imageUrl": "https://content.beatstars.com/prod/profile/avatar/MPMR3438197/avatar.jpg",
+    "followers": 7450,
+    "tracksCount": 134,
+    "playsCount": 248760,
+    "salesCount": 845
+  },
+  {
+    "id": "MR1249282",
+    "name": "KADDY",
+    "username": "kaddybeats",
+    "location": "Georgia",
+    "imageUrl": "https://content.beatstars.com/users/prod/1249282/image/YgIAklgVZtbw/ava111.jpg",
+    "followers": 14580,
+    "tracksCount": 245,
+    "playsCount": 564320,
+    "salesCount": 1980
+  },
+  {
+    "id": "MR201021",
+    "name": "Anywaywell",
+    "username": "anywaywell",
+    "location": "Welcome to our music family",
+    "imageUrl": "https://content.beatstars.com/users/prod/201021/image/1642809568/1000-1000.jpg",
+    "followers": 11750,
+    "tracksCount": 186,
+    "playsCount": 458920,
+    "salesCount": 1450
   }
 ]

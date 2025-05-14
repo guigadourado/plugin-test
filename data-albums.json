@@ -1,162 +1,167 @@
 [
   {
-    "id": "album1",
-    "title": "TOP 50 BEATS FOR 50$ \"AGONY COLLECTION\"",
-    "artist": "prodbyroth",
-    "price": "$59.99",
-    "trackCount": "20 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_1.png"
-  },
-  {
-    "id": "album2",
-    "title": "Club Infinity- Uptempo",
-    "artist": "recoxl",
-    "price": "$99.99",
-    "trackCount": "60 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_2.png"
-  },
-  {
-    "id": "album3",
-    "title": "TRAP CODE: VOLUME ONE",
-    "artist": "recoxl",
+    "id": "AL-19303669",
+    "title": "Late Night Sessions Vol. 3",
+    "artist": "UNION.",
+    "description": "A collection of soul-infused hip-hop beats with modern R&B elements",
+    "imageUrl": "https://content.beatstars.com/prod/track/artwork/TK19303669/img-6619jpg.jpg",
     "price": "$89.99",
-    "trackCount": "71 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_3.png"
+    "trackCount": 9,
+    "releaseDate": "2024-07-22",
+    "genre": "SOUL"
   },
   {
-    "id": "album4",
-    "title": "-25% OFF!!! Memphis Trap Sampled Beatpack !!!",
-    "artist": "prodbabyspace",
-    "price": "$59.99",
-    "trackCount": "61 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_4.png"
+    "id": "AL-19960357",
+    "title": "Emotional Waves",
+    "artist": "LickOwens",
+    "description": "Piano-driven R&B instrumentals inspired by frank ocean and modern soul artists",
+    "imageUrl": "https://content.beatstars.com/prod/track/artwork/TK19960357/20240920112327.png",
+    "price": "$120.00",
+    "trackCount": 7,
+    "releaseDate": "2024-09-20",
+    "genre": "RNB"
   },
   {
-    "id": "album5",
-    "title": "\ud83d\udd25100 BEATS FOR $100 - Legacy Bundle",
-    "artist": "waytoolost",
-    "price": "$100.00",
-    "trackCount": "3 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_5.png"
+    "id": "AL-16785647",
+    "title": "Trap Essentials",
+    "artist": "BENJI PROD",
+    "description": "Premium collection of hard-hitting trap beats for modern hip-hop artists",
+    "imageUrl": "https://content.beatstars.com/prod/track/artwork/TK16785647/-2023-12-03-132708.png",
+    "price": "$149.95",
+    "trackCount": 12,
+    "releaseDate": "2023-11-06",
+    "genre": "TRAP"
   },
   {
-    "id": "album6",
-    "title": "50 BEATS FOR $50 \ud83d\udd25 LUCKI EDITION | EXPIRES SOON",
-    "artist": "waytoolost",
-    "price": "$50.00",
-    "trackCount": "93 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_6.png"
+    "id": "AL-13030630",
+    "title": "Platinum Collection Vol. 2",
+    "artist": "Kontrabandz",
+    "description": "Industry-standard beats from a multi-platinum producer. Perfect for commercial releases.",
+    "imageUrl": "https://content.beatstars.com/prod/track/artwork/TK13030630/keepgoing.jpg",
+    "price": "$199.00",
+    "trackCount": 15,
+    "releaseDate": "2022-10-18",
+    "genre": "HIP_HOP"
   },
   {
-    "id": "album7",
-    "title": "R&B SZA Type Beat Bulk Discount",
-    "artist": "jofis",
-    "price": "$49.99",
-    "trackCount": "6 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_7.png"
+    "id": "AL-22285328",
+    "title": "Underground Classics",
+    "artist": "Davy's Gray",
+    "description": "A collection of underground hip-hop beats with dark, atmospheric textures",
+    "imageUrl": "https://content.beatstars.com/prod/track/artwork/TK22285328/photo-2025-04-11-16-09-16.jpg",
+    "price": "$129.99",
+    "trackCount": 8,
+    "releaseDate": "2025-04-11",
+    "genre": "HIP_HOP"
   },
   {
-    "id": "album8",
-    "title": "OTHELLO BEATS PACK 009 - FOR RAPPERS WHO GOT SUM TO SAY",
-    "artist": "othellobeats",
-    "price": "$69.99",
-    "trackCount": "32 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_8.png"
-  },
-  {
-    "id": "album9",
-    "title": "50 BEATS FOR $50",
-    "artist": "boger",
-    "price": "$50.00",
-    "trackCount": "46 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_9.png"
-  },
-  {
-    "id": "album10",
-    "title": "\ud83d\udd25 HOT DEAL | 35 BEATS FOR JUST $35",
-    "artist": "awakeagain",
-    "price": "$35.00",
-    "trackCount": "47 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_10.png"
-  },
-  {
-    "id": "album11",
-    "title": "Grey October (Limited Edition Beat Tape)",
-    "artist": "chxsebank",
-    "price": "$69.99",
-    "trackCount": "14 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_11.png"
-  },
-  {
-    "id": "album12",
-    "title": "JIGGY",
-    "artist": "prodbydefault",
-    "price": "$39.99",
-    "trackCount": "84 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_12.png"
-  },
-  {
-    "id": "album13",
-    "title": "2025 BEATS \ud83d\udd25",
-    "artist": "syndromebeats",
+    "id": "AL-17888107",
+    "title": "THANK GOD Compilation",
+    "artist": "offsneakbeats",
+    "description": "A series of trap beats inspired by ASAP Rocky's iconic sound",
+    "imageUrl": "https://content.beatstars.com/prod/track/artwork/TK17888107/youtube.jpg",
     "price": "$99.99",
-    "trackCount": "97 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_13.png"
+    "trackCount": 10,
+    "releaseDate": "2024-03-01",
+    "genre": "TRAP"
   },
   {
-    "id": "album14",
-    "title": "Type Beat Tapes",
-    "artist": "justclayton",
-    "price": "$89.99",
-    "trackCount": "22 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_14.png"
+    "id": "AL-20306922",
+    "title": "East Coast Dreams",
+    "artist": "Buckroll",
+    "description": "Storytelling beats in the classic East Coast hip-hop tradition",
+    "imageUrl": "https://content.beatstars.com/prod/track/artwork/TK20306922/coldinmydreams.jpg",
+    "price": "$89.95",
+    "trackCount": 11,
+    "releaseDate": "2024-10-24",
+    "genre": "EAST_COAST"
   },
   {
-    "id": "album15",
-    "title": "EASTER Gifts \ud83d\udd25 DRILL, TRAP, RNB, AFRO (TYPE BEAT)",
-    "artist": "Nel95musik",
-    "price": "$69.99",
-    "trackCount": "19 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_15.png"
+    "id": "AL-21219491",
+    "title": "Piano Trap Collection",
+    "artist": "junkey",
+    "description": "The ultimate collection of piano-infused trap beats for modern artists",
+    "imageUrl": "https://content.beatstars.com/prod/track/artwork/TK21219491/tg-image-3637647874jpeg.jpg",
+    "price": "$119.99",
+    "trackCount": 13,
+    "releaseDate": "2025-01-08",
+    "genre": "TRAP"
   },
   {
-    "id": "album16",
-    "title": "Post Punk Type Beats that will cure your writers block",
-    "artist": "centerkiddo",
-    "price": "$29.99",
-    "trackCount": "28 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_16.png"
-  },
-  {
-    "id": "album17",
-    "title": "30 Beats For 30$ + 10 FREE BEATS!",
-    "artist": "granyt",
-    "price": "$49.99",
-    "trackCount": "3 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_17.png"
-  },
-  {
-    "id": "album18",
-    "title": "Heavenly Beat Pack",
-    "artist": "griffinbrown3609It",
+    "id": "AL-8855588",
+    "title": "808 Masters Vol. 1",
+    "artist": "Anywaywell",
+    "description": "Hard-hitting 808 beats for modern trap and hip-hop production",
+    "imageUrl": "https://content.beatstars.com/prod/track/artwork/TK8855588/20210730163058.jpg",
     "price": "$79.99",
-    "trackCount": "41 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_18.png"
+    "trackCount": 10,
+    "releaseDate": "2021-07-30",
+    "genre": "TRAP"
   },
   {
-    "id": "album19",
-    "title": "50 Beats 50 Dollars UNLIMITED",
-    "artist": "radbeatss",
+    "id": "AL-21521171",
+    "title": "Pop Rock Fusion",
+    "artist": "Gotenkeys",
+    "description": "A unique blend of pop, rock, and hip-hop elements for crossover artists",
+    "imageUrl": "https://content.beatstars.com/prod/track/artwork/TK21521171/dxg1p0uazqc-1-.jpg",
+    "price": "$109.99",
+    "trackCount": 12,
+    "releaseDate": "2025-02-01",
+    "genre": "POP"
+  },
+  {
+    "id": "AL-19342734",
+    "title": "Detroit Trap Anthems",
+    "artist": "Damerunitup",
+    "description": "Authentic Detroit trap sound with hard-hitting drums and sample-based production",
+    "imageUrl": "https://content.beatstars.com/prod/track/artwork/TK19342734/beatstars-thumbnail-1-.jpg",
+    "price": "$89.99",
+    "trackCount": 9,
+    "releaseDate": "2024-07-25",
+    "genre": "TRAP"
+  },
+  {
+    "id": "AL-17731788",
+    "title": "Acoustic Sessions",
+    "artist": "IOF",
+    "description": "Acoustic guitar instrumentals for artists looking for an organic sound",
+    "imageUrl": "https://content.beatstars.com/prod/track/artwork/TK17731788/startoverbeatstarsthumbnail.jpg",
+    "price": "$79.95",
+    "trackCount": 8,
+    "releaseDate": "2024-02-15",
+    "genre": "ROCK"
+  },
+  {
+    "id": "AL-14231681",
+    "title": "Alternative Vision",
+    "artist": "ProdKult",
+    "description": "Alternative rock and indie inspired beats with unique soundscapes",
+    "imageUrl": "https://content.beatstars.com/prod/track/artwork/TK14231681/fsafadsdsf.jpg",
+    "price": "$99.95",
+    "trackCount": 10,
+    "releaseDate": "2023-02-12",
+    "genre": "ROCK"
+  },
+  {
+    "id": "AL-22333562",
+    "title": "Underground Chronicles Vol. 1",
+    "artist": "4_head",
+    "description": "Experimental hip-hop beats with unconventional sampling and production techniques",
+    "imageUrl": "https://content.beatstars.com/prod/track/artwork/TK22333562/yvl-spongebob.jpg",
     "price": "$69.99",
-    "trackCount": "63 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_19.png"
+    "trackCount": 11,
+    "releaseDate": "2025-04-16",
+    "genre": "HIP_HOP"
   },
   {
-    "id": "album20",
-    "title": "\ud83d\udd25 100 Beat Vault \u2013 The Ultimate Rapper\u2019s Collection ($50)",
-    "artist": "yochedder",
-    "price": "$50.00",
-    "trackCount": "63 tracks",
-    "imageUrl": "https://raw.githubusercontent.com/guigadourado/plugin-test/main/artworks/album_20.png"
+    "id": "AL-21179530",
+    "title": "Producer's Collection",
+    "artist": "KADDY",
+    "description": "25 premium beats covering multiple genres from one of the platform's top producers",
+    "imageUrl": "https://content.beatstars.com/prod/track/artwork/TK21179530/cover.jpg",
+    "price": "$149.99",
+    "trackCount": 25,
+    "releaseDate": "2025-01-05",
+    "genre": "HIP_HOP"
   }
 ]
