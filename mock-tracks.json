@@ -1,0 +1,167 @@
+[
+  {
+    "id": "MOCK-TK1001",
+    "title": "Midnight Dreams",
+    "artist": "LunarBeats",
+    "genre": "Hip Hop",
+    "price": "$29.99",
+    "bpm": 92,
+    "description": "Smooth hip hop beat with atmospheric pads and tight drums. Perfect for storytelling tracks.",
+    "releaseDate": "2025-01-15",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-TK1002",
+    "title": "Solar Flare",
+    "artist": "Cosmic Productions",
+    "genre": "Trap",
+    "price": "$34.95",
+    "bpm": 140,
+    "description": "Hard-hitting trap beat with 808s that knock. Features unique atmospheric samples.",
+    "releaseDate": "2025-02-03",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-TK1003",
+    "title": "Ocean Waves",
+    "artist": "Tidal Sounds",
+    "genre": "R&B",
+    "price": "$24.99",
+    "bpm": 78,
+    "description": "Smooth R&B beat with wavy synths and melodic samples. Laid-back vibe with crisp drums.",
+    "releaseDate": "2025-01-28",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-TK1004",
+    "title": "Urban Sunset",
+    "artist": "CityScape",
+    "genre": "Lo-Fi Hip Hop",
+    "price": "$19.95",
+    "bpm": 85,
+    "description": "Mellow lo-fi beat with vinyl crackles and jazzy piano samples. Perfect for chill vibes.",
+    "releaseDate": "2025-02-10",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-TK1005",
+    "title": "Electric Dreams",
+    "artist": "SynthWave",
+    "genre": "Electronic",
+    "price": "$27.50",
+    "bpm": 120,
+    "description": "Retro-futuristic synth beat with pulsing basslines and glitchy effects. 80s-inspired sounds.",
+    "releaseDate": "2025-03-05",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-TK1006",
+    "title": "Morning Haze",
+    "artist": "DreamScape",
+    "genre": "Ambient Hip Hop",
+    "price": "$0",
+    "bpm": 72,
+    "description": "Free ambient hip hop beat with spacious atmospheres and minimal drums. Perfect for background music.",
+    "releaseDate": "2025-02-18",
+    "isFree": true
+  },
+  {
+    "id": "MOCK-TK1007",
+    "title": "Street Light",
+    "artist": "Urban Legends",
+    "genre": "Boom Bap",
+    "price": "$24.99",
+    "bpm": 90,
+    "description": "Classic boom bap beat with vinyl samples and punchy drums. Old school vibes with modern production.",
+    "releaseDate": "2025-01-22",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-TK1008",
+    "title": "Future Bounce",
+    "artist": "WaveMakers",
+    "genre": "Future Bass",
+    "price": "$32.99",
+    "bpm": 150,
+    "description": "Energetic future bass beat with huge synths and bouncy percussion. Festival-ready production.",
+    "releaseDate": "2025-03-12",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-TK1009",
+    "title": "Starlight",
+    "artist": "Astral Productions",
+    "genre": "Trap Soul",
+    "price": "$29.99",
+    "bpm": 95,
+    "description": "Emotional trap soul beat with heavenly pads and melodic 808s. Perfect for introspective tracks.",
+    "releaseDate": "2025-02-25",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-TK1010",
+    "title": "Concrete Jungle",
+    "artist": "Metropolitan",
+    "genre": "East Coast Hip Hop",
+    "price": "$26.95",
+    "bpm": 88,
+    "description": "Gritty East Coast hip hop beat with heavy drums and urban samples. Raw and authentic sound.",
+    "releaseDate": "2025-01-30",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-TK1011",
+    "title": "Neon Lights",
+    "artist": "CyberPunk",
+    "genre": "Wave",
+    "price": "$34.99",
+    "bpm": 130,
+    "description": "Futuristic wave beat with cyberpunk aesthetics. Dark synths and glitchy percussion.",
+    "releaseDate": "2025-03-18",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-TK1012",
+    "title": "Golden Hour",
+    "artist": "Sunset Studios",
+    "genre": "Chill Trap",
+    "price": "$0",
+    "bpm": 70,
+    "description": "Free chill trap beat with relaxing melodies and subtle percussion. Perfect for downtempo tracks.",
+    "releaseDate": "2025-02-08",
+    "isFree": true
+  },
+  {
+    "id": "MOCK-TK1013",
+    "title": "Purple Haze",
+    "artist": "DrizzBeats",
+    "genre": "Drill",
+    "price": "$29.95",
+    "bpm": 140,
+    "description": "UK drill beat with sliding 808s and atmospheric melodies. Hard-hitting and energetic.",
+    "releaseDate": "2025-03-01",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-TK1014",
+    "title": "Vintage Soul",
+    "artist": "ClassicBeats",
+    "genre": "Soul",
+    "price": "$24.99",
+    "bpm": 75,
+    "description": "Soul-inspired beat with vinyl samples and live instruments. Warm and organic sound.",
+    "releaseDate": "2025-01-25",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-TK1015",
+    "title": "Digital Rain",
+    "artist": "Matrix Sounds",
+    "genre": "Glitch Hop",
+    "price": "$28.50",
+    "bpm": 110,
+    "description": "Experimental glitch hop beat with complex rhythms and digital artifacts. Cutting-edge production.",
+    "releaseDate": "2025-03-08",
+    "isFree": false
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "MOCK-PR1001",
+    "name": "Alex Johnson",
+    "username": "cosmicbeats",
+    "genre": "Hip Hop/Trap",
+    "location": "Los Angeles, CA",
+    "followers": 15243,
+    "tracksCount": 187,
+    "salesCount": 4320,
+    "description": "Multi-platinum producer specializing in hip hop and trap beats. Working with major artists since 2018."
+  },
+  {
+    "id": "MOCK-PR1002",
+    "name": "Sarah Williams",
+    "username": "melodicmind",
+    "genre": "R&B/Soul",
+    "location": "Atlanta, GA",
+    "followers": 8754,
+    "tracksCount": 104,
+    "salesCount": 2150,
+    "description": "R&B producer and songwriter with a focus on melodic compositions and smooth production."
+  },
+  {
+    "id": "MOCK-PR1003",
+    "name": "Michael Chen",
+    "username": "wavepioneer",
+    "genre": "Electronic",
+    "location": "Seattle, WA",
+    "followers": 12635,
+    "tracksCount": 156,
+    "salesCount": 3720,
+    "description": "Electronic music producer and sound designer creating cutting-edge beats and experimental sounds."
+  },
+  {
+    "id": "MOCK-PR1004",
+    "name": "James Wilson",
+    "username": "vintagegrooves",
+    "genre": "Lo-Fi/Boom Bap",
+    "location": "New York, NY",
+    "followers": 9821,
+    "tracksCount": 132,
+    "salesCount": 2845,
+    "description": "Specializing in lo-fi and boom bap production. Record collector and sample digger with an ear for nostalgia."
+  },
+  {
+    "id": "MOCK-PR1005",
+    "name": "Olivia Martinez",
+    "username": "synthqueen",
+    "genre": "Synthwave/Electronic",
+    "location": "Miami, FL",
+    "followers": 7654,
+    "tracksCount": 89,
+    "salesCount": 1920,
+    "description": "Retro-futuristic producer creating 80s inspired synthwave and modern electronic music."
+  },
+  {
+    "id": "MOCK-PR1006",
+    "name": "David Smith",
+    "username": "urbanlegend",
+    "genre": "Hip Hop",
+    "location": "Chicago, IL",
+    "followers": 14258,
+    "tracksCount": 175,
+    "salesCount": 3850,
+    "description": "Veteran hip hop producer with roots in the underground. Known for sample-heavy production and crisp drums."
+  },
+  {
+    "id": "MOCK-PR1007",
+    "name": "Emily Thompson",
+    "username": "dreamaudio",
+    "genre": "Ambient/Chillout",
+    "location": "Portland, OR",
+    "followers": 5632,
+    "tracksCount": 67,
+    "salesCount": 1480,
+    "description": "Ambient music producer creating atmospheric soundscapes and meditative compositions."
+  },
+  {
+    "id": "MOCK-PR1008",
+    "name": "Carlos Rodriguez",
+    "username": "rhythmmaster",
+    "genre": "Latin/Reggaeton",
+    "location": "Miami, FL",
+    "followers": 11325,
+    "tracksCount": 143,
+    "salesCount": 3265,
+    "description": "Specializing in Latin-influenced production with a focus on reggaeton and modern Latin urban music."
+  },
+  {
+    "id": "MOCK-PR1009",
+    "name": "Taylor Brown",
+    "username": "futuresound",
+    "genre": "Future Bass/Trap",
+    "location": "Denver, CO",
+    "followers": 8945,
+    "tracksCount": 112,
+    "salesCount": 2540,
+    "description": "Creating forward-thinking trap and future bass with intricate sound design and emotional melodies."
+  },
+  {
+    "id": "MOCK-PR1010",
+    "name": "Marcus Davis",
+    "username": "soulcraft",
+    "genre": "Soul/Jazz Hip Hop",
+    "location": "Detroit, MI",
+    "followers": 10752,
+    "tracksCount": 128,
+    "salesCount": 2980,
+    "description": "Producer specializing in soulful hip hop with jazz influences. Plays multiple instruments and incorporates live elements."
+  }
+]

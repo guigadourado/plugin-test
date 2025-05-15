@@ -1,0 +1,112 @@
+[
+  {
+    "id": "MOCK-AL1001",
+    "title": "Dream Sequence",
+    "artist": "LunarBeats",
+    "genre": "Hip Hop",
+    "price": "$49.99",
+    "trackCount": "12",
+    "description": "A collection of atmospheric hip hop beats perfect for storytelling. Includes stems and trackouts.",
+    "releaseDate": "2025-01-20",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-AL1002",
+    "title": "Cosmic Waves",
+    "artist": "Stellar Productions",
+    "genre": "Trap",
+    "price": "$59.95",
+    "trackCount": "10",
+    "description": "Premium trap beat collection featuring heavy 808s and spacey atmospheres. Full stems included.",
+    "releaseDate": "2025-02-15",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-AL1003",
+    "title": "Ocean Vibes",
+    "artist": "Tidal Sounds",
+    "genre": "R&B",
+    "price": "$39.99",
+    "trackCount": "8",
+    "description": "Smooth R&B beat collection with wavy synths and melodic samples. Includes MIDI files.",
+    "releaseDate": "2025-01-30",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-AL1004",
+    "title": "City Nights",
+    "artist": "Urban Legends",
+    "genre": "Boom Bap",
+    "price": "$44.95",
+    "trackCount": "15",
+    "description": "Old school boom bap beat collection. Classic hip hop vibes with modern production techniques.",
+    "releaseDate": "2025-02-05",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-AL1005",
+    "title": "Electric Dreams Vol. 1",
+    "artist": "SynthWave",
+    "genre": "Electronic",
+    "price": "$54.99",
+    "trackCount": "9",
+    "description": "Retro-futuristic synth beat collection inspired by 80s film scores and modern electronic music.",
+    "releaseDate": "2025-03-10",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-AL1006",
+    "title": "Ambient Horizons",
+    "artist": "DreamScape",
+    "genre": "Ambient Hip Hop",
+    "price": "$0",
+    "trackCount": "6",
+    "description": "Free ambient hip hop beat collection. Spacious atmospheres and minimal drums perfect for background music.",
+    "releaseDate": "2025-02-20",
+    "isFree": true
+  },
+  {
+    "id": "MOCK-AL1007",
+    "title": "Street Chronicles",
+    "artist": "Metropolitan",
+    "genre": "East Coast Hip Hop",
+    "price": "$49.99",
+    "trackCount": "14",
+    "description": "Gritty East Coast hip hop beat collection with heavy drums and urban samples. Raw and authentic sound.",
+    "releaseDate": "2025-01-25",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-AL1008",
+    "title": "Future Sound",
+    "artist": "WaveMakers",
+    "genre": "Future Bass",
+    "price": "$64.99",
+    "trackCount": "10",
+    "description": "High-energy future bass beat collection. Festival-ready production with huge synths and bouncy percussion.",
+    "releaseDate": "2025-03-15",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-AL1009",
+    "title": "Soul Sessions",
+    "artist": "Vintage Vibes",
+    "genre": "Soul",
+    "price": "$39.95",
+    "trackCount": "8",
+    "description": "Soul-inspired beat collection with vinyl samples and live instruments. Warm and organic sound.",
+    "releaseDate": "2025-02-10",
+    "isFree": false
+  },
+  {
+    "id": "MOCK-AL1010",
+    "title": "Digital Revolution",
+    "artist": "Matrix Sounds",
+    "genre": "Glitch Hop",
+    "price": "$54.95",
+    "trackCount": "12",
+    "description": "Experimental glitch hop beat collection with complex rhythms and digital artifacts. Cutting-edge production.",
+    "releaseDate": "2025-03-05",
+    "isFree": false
+  }
+]

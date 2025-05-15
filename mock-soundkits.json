@@ -1,0 +1,122 @@
+[
+  {
+    "id": "MOCK-SK1001",
+    "title": "Deep Space Drums",
+    "artist": "Cosmic Productions",
+    "genre": "Trap",
+    "price": "$59.99",
+    "format": "WAV/MIDI",
+    "description": "Premium drum kit with over 100 unique drum samples, 20 one-shots, and 15 MIDI loops. Cosmic trap vibes.",
+    "sampleCount": 150,
+    "presetCount": 25,
+    "isFree": false
+  },
+  {
+    "id": "MOCK-SK1002",
+    "title": "Analog Dreams",
+    "artist": "VintageSounds",
+    "genre": "Lo-Fi",
+    "price": "$49.95",
+    "format": "WAV/KONTAKT",
+    "description": "Lo-fi sample pack with vintage synth recordings, vinyl textures, and authentic drum breaks. Includes Kontakt instruments.",
+    "sampleCount": 120,
+    "presetCount": 15,
+    "isFree": false
+  },
+  {
+    "id": "MOCK-SK1003",
+    "title": "808 Essentials",
+    "artist": "BassGuru",
+    "genre": "Hip Hop/Trap",
+    "price": "$39.99",
+    "format": "WAV",
+    "description": "Essential 808 kit with 50 processed and tuned 808s. Perfect for modern hip hop and trap production.",
+    "sampleCount": 75,
+    "presetCount": 0,
+    "isFree": false
+  },
+  {
+    "id": "MOCK-SK1004",
+    "title": "Digital Textures",
+    "artist": "GlitchLabs",
+    "genre": "Electronic",
+    "price": "$54.99",
+    "format": "WAV/SERUM",
+    "description": "Experimental sound design pack with digital textures, glitches, and atmospheric pads. Includes Serum presets.",
+    "sampleCount": 200,
+    "presetCount": 40,
+    "isFree": false
+  },
+  {
+    "id": "MOCK-SK1005",
+    "title": "Starter Pack Vol. 1",
+    "artist": "BeatAcademy",
+    "genre": "Multiple",
+    "price": "$0",
+    "format": "WAV",
+    "description": "Free sample pack with essential sounds for beginners. Drums, melodies, and FX to start your production journey.",
+    "sampleCount": 50,
+    "presetCount": 5,
+    "isFree": true
+  },
+  {
+    "id": "MOCK-SK1006",
+    "title": "Melodic Arsenal",
+    "artist": "MelodyMaster",
+    "genre": "R&B/Soul",
+    "price": "$44.95",
+    "format": "WAV/MIDI",
+    "description": "Melodic sample pack with soulful keys, chord progressions, and bass lines. Includes MIDI files for full flexibility.",
+    "sampleCount": 100,
+    "presetCount": 10,
+    "isFree": false
+  },
+  {
+    "id": "MOCK-SK1007",
+    "title": "Vintage Drum Machines",
+    "artist": "RetroBeats",
+    "genre": "Multiple",
+    "price": "$49.99",
+    "format": "WAV/KONTAKT",
+    "description": "Classic drum machine samples from iconic hardware. Meticulously sampled and processed for modern production.",
+    "sampleCount": 150,
+    "presetCount": 20,
+    "isFree": false
+  },
+  {
+    "id": "MOCK-SK1008",
+    "title": "Guitar Loops Essentials",
+    "artist": "AcousticMinds",
+    "genre": "Hip Hop/R&B",
+    "price": "$39.95",
+    "format": "WAV",
+    "description": "Studio-quality guitar loops in various keys and styles. Perfect for adding organic elements to your productions.",
+    "sampleCount": 80,
+    "presetCount": 0,
+    "isFree": false
+  },
+  {
+    "id": "MOCK-SK1009",
+    "title": "Modern Producer Toolkit",
+    "artist": "ProSound",
+    "genre": "Multiple",
+    "price": "$69.99",
+    "format": "WAV/MIDI/SERUM",
+    "description": "Complete production toolkit with drums, melodies, FX, and presets. Everything you need for contemporary production.",
+    "sampleCount": 300,
+    "presetCount": 50,
+    "isFree": false
+  },
+  {
+    "id": "MOCK-SK1010",
+    "title": "Vocal Chops & Atmospheres",
+    "artist": "VocalAlchemy",
+    "genre": "Electronic/Pop",
+    "price": "$45.99",
+    "format": "WAV/KONTAKT",
+    "description": "Diverse collection of processed vocal samples, chops, and atmospheric textures. Add human elements to your tracks.",
+    "sampleCount": 120,
+    "presetCount": 15,
+    "isFree": false
+  }
+]
