@@ -9,7 +9,8 @@
     "description": "Premium drum kit with over 100 unique drum samples, 20 one-shots, and 15 MIDI loops. Cosmic trap vibes.",
     "sampleCount": 150,
     "presetCount": 25,
-    "isFree": false
+    "isFree": false,
+    "imageUrl": "artworks/soundkits/artwork_1.png"
   },
   {
     "id": "MOCK-SK1002",
@@ -21,7 +22,8 @@
     "description": "Lo-fi sample pack with vintage synth recordings, vinyl textures, and authentic drum breaks. Includes Kontakt instruments.",
     "sampleCount": 120,
     "presetCount": 15,
-    "isFree": false
+    "isFree": false,
+    "imageUrl": "artworks/soundkits/artwork_2.png"
   },
   {
     "id": "MOCK-SK1003",
@@ -33,7 +35,8 @@
     "description": "Essential 808 kit with 50 processed and tuned 808s. Perfect for modern hip hop and trap production.",
     "sampleCount": 75,
     "presetCount": 0,
-    "isFree": false
+    "isFree": false,
+    "imageUrl": "artworks/soundkits/artwork_3.png"
   },
   {
     "id": "MOCK-SK1004",
@@ -45,7 +48,8 @@
     "description": "Experimental sound design pack with digital textures, glitches, and atmospheric pads. Includes Serum presets.",
     "sampleCount": 200,
     "presetCount": 40,
-    "isFree": false
+    "isFree": false,
+    "imageUrl": "artworks/soundkits/artwork_4.png"
   },
   {
     "id": "MOCK-SK1005",
@@ -57,7 +61,8 @@
     "description": "Free sample pack with essential sounds for beginners. Drums, melodies, and FX to start your production journey.",
     "sampleCount": 50,
     "presetCount": 5,
-    "isFree": true
+    "isFree": true,
+    "imageUrl": "artworks/soundkits/artwork_5.png"
   },
   {
     "id": "MOCK-SK1006",
@@ -69,7 +74,8 @@
     "description": "Melodic sample pack with soulful keys, chord progressions, and bass lines. Includes MIDI files for full flexibility.",
     "sampleCount": 100,
     "presetCount": 10,
-    "isFree": false
+    "isFree": false,
+    "imageUrl": "artworks/soundkits/artwork_6.png"
   },
   {
     "id": "MOCK-SK1007",
@@ -81,7 +87,8 @@
     "description": "Classic drum machine samples from iconic hardware. Meticulously sampled and processed for modern production.",
     "sampleCount": 150,
     "presetCount": 20,
-    "isFree": false
+    "isFree": false,
+    "imageUrl": "artworks/soundkits/artwork_7.png"
   },
   {
     "id": "MOCK-SK1008",
@@ -93,7 +100,8 @@
     "description": "Studio-quality guitar loops in various keys and styles. Perfect for adding organic elements to your productions.",
     "sampleCount": 80,
     "presetCount": 0,
-    "isFree": false
+    "isFree": false,
+    "imageUrl": "artworks/soundkits/artwork_8.png"
   },
   {
     "id": "MOCK-SK1009",
@@ -105,7 +113,8 @@
     "description": "Complete production toolkit with drums, melodies, FX, and presets. Everything you need for contemporary production.",
     "sampleCount": 300,
     "presetCount": 50,
-    "isFree": false
+    "isFree": false,
+    "imageUrl": "artworks/soundkits/artwork_9.png"
   },
   {
     "id": "MOCK-SK1010",
@@ -117,6 +126,7 @@
     "description": "Diverse collection of processed vocal samples, chops, and atmospheric textures. Add human elements to your tracks.",
     "sampleCount": 120,
     "presetCount": 15,
-    "isFree": false
+    "isFree": false,
+    "imageUrl": "artworks/soundkits/artwork_10.png"
   }
 ]

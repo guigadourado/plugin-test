@@ -8,7 +8,8 @@
     "followers": 15243,
     "tracksCount": 187,
     "salesCount": 4320,
-    "description": "Multi-platinum producer specializing in hip hop and trap beats. Working with major artists since 2018."
+    "description": "Multi-platinum producer specializing in hip hop and trap beats. Working with major artists since 2018.",
+    "imageUrl": "artworks/profiles/artwork_1.png"
   },
   {
     "id": "MOCK-PR1002",
@@ -19,7 +20,8 @@
     "followers": 8754,
     "tracksCount": 104,
     "salesCount": 2150,
-    "description": "R&B producer and songwriter with a focus on melodic compositions and smooth production."
+    "description": "R&B producer and songwriter with a focus on melodic compositions and smooth production.",
+    "imageUrl": "artworks/profiles/artwork_2.png"
   },
   {
     "id": "MOCK-PR1003",
@@ -30,7 +32,8 @@
     "followers": 12635,
     "tracksCount": 156,
     "salesCount": 3720,
-    "description": "Electronic music producer and sound designer creating cutting-edge beats and experimental sounds."
+    "description": "Electronic music producer and sound designer creating cutting-edge beats and experimental sounds.",
+    "imageUrl": "artworks/profiles/artwork_3.png"
   },
   {
     "id": "MOCK-PR1004",
@@ -41,7 +44,8 @@
     "followers": 9821,
     "tracksCount": 132,
     "salesCount": 2845,
-    "description": "Specializing in lo-fi and boom bap production. Record collector and sample digger with an ear for nostalgia."
+    "description": "Specializing in lo-fi and boom bap production. Record collector and sample digger with an ear for nostalgia.",
+    "imageUrl": "artworks/profiles/artwork_4.png"
   },
   {
     "id": "MOCK-PR1005",
@@ -52,7 +56,8 @@
     "followers": 7654,
     "tracksCount": 89,
     "salesCount": 1920,
-    "description": "Retro-futuristic producer creating 80s inspired synthwave and modern electronic music."
+    "description": "Retro-futuristic producer creating 80s inspired synthwave and modern electronic music.",
+    "imageUrl": "artworks/profiles/artwork_5.png"
   },
   {
     "id": "MOCK-PR1006",
@@ -63,7 +68,8 @@
     "followers": 14258,
     "tracksCount": 175,
     "salesCount": 3850,
-    "description": "Veteran hip hop producer with roots in the underground. Known for sample-heavy production and crisp drums."
+    "description": "Veteran hip hop producer with roots in the underground. Known for sample-heavy production and crisp drums.",
+    "imageUrl": "artworks/profiles/artwork_6.png"
   },
   {
     "id": "MOCK-PR1007",
@@ -74,7 +80,8 @@
     "followers": 5632,
     "tracksCount": 67,
     "salesCount": 1480,
-    "description": "Ambient music producer creating atmospheric soundscapes and meditative compositions."
+    "description": "Ambient music producer creating atmospheric soundscapes and meditative compositions.",
+    "imageUrl": "artworks/profiles/artwork_7.png"
   },
   {
     "id": "MOCK-PR1008",
@@ -85,7 +92,8 @@
     "followers": 11325,
     "tracksCount": 143,
     "salesCount": 3265,
-    "description": "Specializing in Latin-influenced production with a focus on reggaeton and modern Latin urban music."
+    "description": "Specializing in Latin-influenced production with a focus on reggaeton and modern Latin urban music.",
+    "imageUrl": "artworks/profiles/artwork_8.png"
   },
   {
     "id": "MOCK-PR1009",
@@ -96,7 +104,8 @@
     "followers": 8945,
     "tracksCount": 112,
     "salesCount": 2540,
-    "description": "Creating forward-thinking trap and future bass with intricate sound design and emotional melodies."
+    "description": "Creating forward-thinking trap and future bass with intricate sound design and emotional melodies.",
+    "imageUrl": "artworks/profiles/artwork_9.png"
   },
   {
     "id": "MOCK-PR1010",
@@ -107,6 +116,7 @@
     "followers": 10752,
     "tracksCount": 128,
     "salesCount": 2980,
-    "description": "Producer specializing in soulful hip hop with jazz influences. Plays multiple instruments and incorporates live elements."
+    "description": "Producer specializing in soulful hip hop with jazz influences. Plays multiple instruments and incorporates live elements.",
+    "imageUrl": "artworks/profiles/artwork_10.png"
   }
 ]
